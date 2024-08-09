@@ -3,6 +3,8 @@ let userAPI = "http://localhost:3000/users";
 let categoryAPI = "http://localhost:3000/categories";
 let productAPI = "http://localhost:3000/products";
 let orderAPI = "http://localhost:3000/orders";
+let orderDetailAPI = "http://localhost:3000/order_detail";
+let commentAPI = "http://localhost:3000/comment";
 
 //DASHBOARD
 function countUsers() {
@@ -313,12 +315,6 @@ function handleDeleteCategory(id) {
           'Content-Type': 'application/json'
       },
   })
-      .then(function(response) {
-          response.json();
-      }) 
-      .then(function() {
-        window.location.href = 'category-manager.html';
-      });
 }
 
 //PRODUCTS
@@ -484,12 +480,6 @@ function handleDeleteProduct(id) {
           'Content-Type': 'application/json'
       },
   })
-      .then(function(response) {
-          response.json();
-      }) 
-      .then(function() {
-        window.location.href = 'product-manager.html';
-      });
 }
 
 
@@ -590,4 +580,132 @@ async function updateStatusOrder(data,id) {
   } else {
     throw new Error('Failed to update product');
   }
+}
+async function handleShowOrderDetail(orderid) {
+  try {
+    // Gọi API để lấy dữ liệu order detail
+    const orderDetailResponse = await fetch(`${orderDetailAPI}?orderid=${orderid}`);
+    const orderDetailData = await orderDetailResponse.json();
+
+    // Gọi API để lấy dữ liệu product
+    const productResponse = await fetch(productAPI);
+    const productData = await productResponse.json();
+
+    // Tạo một object chứa name và price của mỗi product
+    const productInfo = {};
+    productData.forEach(product => {
+      productInfo[product.id] = {
+        image: product.image,
+        price: product.price
+      };
+    });
+
+    // Gộp dữ liệu order detail và thông tin product
+    const resultData = orderDetailData.map(item => {
+      const product = productInfo[item.productid];
+      return {
+        ...item,
+        image: product ? product.image : 'Unknown',
+        price: product ? product.price : 0
+      };
+    }).filter(item => productInfo[item.productid]); // Thêm điều kiện này
+    
+    renderOrderDetail(resultData);
+
+  } catch (error) {
+    console.error('Lỗi khi lấy dữ liệu:', error);
+    return [];
+  }
+}
+function renderOrderDetail(orderDetails) {
+  let listOrderDetail = document.querySelector('#list-order-details')
+  let htmls = orderDetails.map(function(orderDetail) {
+    return `
+      <tr>
+        <td class="img-order">
+            <img src="${orderDetail.image}" alt="">
+        </td>
+        <td>
+          ${orderDetail.price.toLocaleString('en-US', {
+            style: 'decimal',
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0
+          })} VND
+        </td>
+        <td>${orderDetail.quantity}</td>
+        <td>
+          ${(orderDetail.price * orderDetail.quantity).toLocaleString('en-US', {
+            style: 'decimal',
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0
+          })} VND
+        </td>
+      </tr>
+    `
+  })
+  listOrderDetail.innerHTML = htmls.join("")
+}
+function getNameOrder(id) {
+  fetch(`${orderAPI}/${id}`)
+    .then(response => response.json())
+    .then(function(data) {
+      console.log(data);
+      document.querySelector('.name-order').innerText = data.id
+    })
+}
+
+
+//COMMENT MANAGER
+async function showComment() {
+  try {
+    // Gọi API để lấy dữ liệu comment
+    const commentResponse = await fetch(commentAPI);
+    const commentData = await commentResponse.json();
+
+    // Gọi API để lấy dữ liệu product
+    const productResponse = await fetch(productAPI);
+    const productData = await productResponse.json();
+
+    // Tạo một mảng chứa dữ liệu comment và product
+    const resultData = commentData.map(comment => {
+      const product = productData.find(p => p.id == comment.productid);
+      return {
+        ...comment,
+        image: product ? product.image : 'Unknown'
+      };
+    });
+
+    // return resultData;
+    console.log(resultData);
+    
+    handleShowComment(resultData)
+  } catch (error) {
+    console.error('Lỗi khi lấy dữ liệu:', error);
+    return [];
+  }
+}
+function handleShowComment(comments) {
+  let listcomments = document.getElementById('list-comments');
+  let htmls = comments.map(function(comment) {
+    return `
+      <tr>
+          <td scope="row"><img src="${comment.image}" alt=""></td>
+          <td scope="row" style="text-align: left">${comment.text}</td>
+          <td>${comment.userid}</td>
+          <td>${comment.date}</td>
+          <td class="more">
+            <button class="btn-delete-category" onclick="confirmDeleteComment('${comment.id}')">Delete</button>
+          </td>
+      </tr>
+    `
+  })
+  listcomments.innerHTML = htmls.join("")
+}
+function handleDeleteComment(id) {
+  fetch(`${commentAPI}/${id}`, {
+    method: 'DELETE',
+      headers: {
+          'Content-Type': 'application/json'
+      }
+  })
 }

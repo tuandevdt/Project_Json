@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Comment Manager</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="title-aside">
+                <h2>M-Watch Store</h2>
+            </div>
+            <div class="content-aside">
+                <div class="menu-aside">
+                    <ul class="menu">
+                        <li class="li-menu"><a href="index.html">Dashboard</a></li>
+                        <li class="li-menu"><a href="user-manager.html">User Manager</a></li>
+                        <li class="li-menu"><a href="category-manager.html">Category Manager</a></li>
+                        <li class="li-menu"><a href="product-manager.html">Product Manager</a></li>
+                        <li class="li-menu"><a href="order-manager.html">The Order Manager</a></li>
+                        <li class="li-menu"><a href="comment-manager.html">Comment Manager</a></li>
+                    </ul>
+                    <ul>
+                        <li class="li-menu">Setting</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-aside">
+                <div class="date-a">
+                    <span id="timeDisplay"></span>
+                </div>
+            </div>
+        </aside>
+        <article>
+            <nav class="navbar navbar-light bg-light">
+                <div class="go-home">
+                    <h5><a href="../index.html">Home Page</a></h5>
+                </div>
+                <div class="account-admin">
+                    <div class="vietnamese">
+                        <div class="img-logo">
+                            <img src="../public/image/vietnam.png" alt="">
+                        </div>
+                        <div class="name">
+                            Vietnamese <i class='bx bx-chevron-down'></i>
+                        </div>
+                    </div>
+                    <span class="navbar-brand"><i class='bx bxs-bell-ring'></i></span>
+                    <div class="content-admin">
+                        <ul class="login-admin">
+                            <li id="login-logout" class="li-admin" style="font-size: 1.1rem;">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="comments">
+                <h1>Quản lý bình luận</h1>
+                <table class="table table-striped table-light">
+                        <thead>
+                            <tr>
+                                <th scope="col">Image Product</th>
+                                <th scope="col">Comment</th>
+                                <th scope="col">User ID</th>
+                                <th scope="col">Date Comment</th>
+                                <th scope="col" class="th">More</th>
+                            </tr>
+                        </thead>
+                        <tbody id="list-comments">
+                            
+                        </tbody>
+                </table>
+                <div class="form-edit form-delete none-active">
+                    <div class="form-group">
+                        <span>Xác nhận xóa?</span>
+                        <input id="id-update" type="hidden" name="id-xoa" value="">
+                        <div class="confirm">
+                            <button id="confirm-delete-product" type="submit" name="submit"
+                                value="yes">Xóa</button>
+                            <div class="none" value="no">Hủy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+    </div>
+</body>
+<script src="./public/scripts/app.js"></script>
+<script src="./public/scripts/main.js"></script>
+
+</html>
+<script>
+    checkStatusLogin();
+    showComment()
+    function confirmDeleteComment(id) {
+        document.querySelector('.form-delete').classList.remove('none-active')
+        document.querySelector('#id-update').value = id;
+        document.querySelector('.none').addEventListener('click', () => {
+            document.querySelector('.form-delete').classList.add('none-active')
+        })
+        document.querySelector('#confirm-delete-product').addEventListener('click', () => {
+            handleDeleteComment(id);
+        })
+    }
+</script>

@@ -215,8 +215,15 @@ article nav .login-admin #login-logout {
     transform: translateY(-50%);
     z-index: 9999;
 }
-.form-update-product h2 {
+.form-update-product h3 {
     text-align: center;
+    color: white;
+}
+.form-update-product table {
+    color: white !important;
+}
+.form-update-product .img-order img {
+    height: 70px;
 }
 .form-update-product #update {
     width: 100%;
@@ -626,6 +633,9 @@ table tr .image img {
 .comments .title {
     width: 100%;
     position: relative;
+}
+.comments img {
+    height: 80px;
 }
 .comments .title h1{
     width: 100%;
