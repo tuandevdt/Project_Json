@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./client/public/style/style.css">
+    <title>Login Watch Store</title>
+</head>
+<body>
+    <div class="container">
+        <div id="login">
+            <div class="Login-register">
+                    <!-- LOGIN -->
+                    <div id="login-index" class="wrapper wrapper-login">
+                        <div class="login-btn">
+                            <form action="" id="form-login" method="POST">
+                                <h1 class="form-heading">Login</h1>
+                                <div class="form-group">
+                                    <input id="username" name="user" type="text" class="form-input" placeholder="Username" value="">
+                                    <small class="error-user error-user-login"></small>
+                                    <span></span>
+                                </div>
+
+                                <div class="form-group">
+                                <input id="password" name="pass" type="password" class="form-input" placeholder="Password" value="">
+                                    <small class="error error-pass-user"></small>
+                                    <span></span>
+                                </div>
+
+
+                                <div class="forgot-pass-a">
+                                    <span class="forgot-pass-index">Forgot password?</span>
+                                </div>
+
+                                <div class="login">
+                                    <button  id="submit" type="submit" class="nut-login">Login</button>
+                                </div>
+
+                                <div class="or-login-by">
+                                    Not a member? 
+                                    <span id="now-register">Register Now</span> 
+                                </div>
+                            </form> 
+                        </div>
+                    </div>
+
+                    <!-- RETURN TO LOGIN -->
+                    <div id="" class="return-pass wrapper-turn-off">
+                        <div class="login-btn">
+                            <form  id="form-check-pass" action="index.php?route=forgot-password" method="POST">
+                                <h2 style="font-size: 23px; line-height: 80px; margin-bottom: 50px;" class="form-heading">Nhập thông tin Email của bạn</h2>
+                                <div class="form-group">
+                                    <input type="email" class="form-control input form-input"  name="email-forgot" id="exampleInputPassword1" placeholder="Email">
+                                    <small class="error"></small>
+                                    <span> </span>
+                                </div>
+
+                                <div class="forgot-pass">
+                                    <span class="return-login">Return To Login</span>
+                                </div>
+
+
+                                <div class="login">
+                                    <button type="submit" name="submit" class="nut-login">Submit</button>
+                                </div>
+
+                            </form> 
+                        </div>
+                    </div>
+        
+                    <!-- REGISTER -->
+                    <div id="register-index" class="wrapper-turn-off">
+                        <div class="login-btn">
+                            <form action="" id="form-login-register" method="POST" enctype="multipart/form-data">
+                                <h1 class="form-heading">Register</h1>
+                            
+                                <div class="form-group">
+                                    <input id="username-register" name="username" type="text" class="form-input" placeholder="Username" value="">
+                                    <small class="error error-user-register"></small>
+                                    <span></span>
+                                </div>
+
+            
+                                <div class="form-group">
+                                    <input id="email-register" name="email" type="text" class="form-input" placeholder="E-mail" value="">
+                                    <small class="error-mail-register"></small>
+                                    <span></span>
+                                </div>
+                
+                                <div class="form-group">
+                                    <input  id="password-register" name="password-re" type="password" class="form-input" placeholder="Password" value="">
+                                    <small class="error error-pass-register"></small>
+                                    <span></span>
+                                </div>
+                
+                                <div class="form-group">
+                                    <input  id="repassword-register" name="confirmpass" type="password" class="form-input" placeholder="Confirm Password" value="">
+                                    <small class="error error-confirmpass-register"></small>
+                                    <span></span>
+                                </div>
+                
+                                <div class="login-register">
+                                    <button id="submit-register" type="submit" class="nut-login">Register</button>
+                                </div>
+                
+                                <div class="or-login-by">
+                                    You have an acount?
+                                    <span id="now-login">
+                                        Login Now
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./client/public/scripts/login.js"></script>
+<script src="./auth/login.js"></script>
+<script src="./auth/register.js"></script>
+<script>
+    validFormLoginRegister();
+    login();
+    registerUser();
+
+</script>
+</html>

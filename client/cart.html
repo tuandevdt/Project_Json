@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./public/style/style.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="first-header">
+                    <div class="address-header">
+                        <i class='bx bxs-home-smile'></i>
+                        <span>Shop: 65 Phạm Như Xương, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng</span>
+                    </div>
+                    <div class="contact-header">
+                        <div class="admin">
+                            <a id="link-admin" class="admin" href="./admin/index.html">Admin Manager</a>
+                        </div>
+                        <div class="first-contact">
+                            <i class='bx bxs-phone-call'></i>
+                            <span>Hotline: 036.293.1719</span>
+                        </div>
+                        <div class="second-contact">
+                            <i class='bx bxs-user'></i>
+                            <span class="login login-header">
+                                <ul>
+                                    <li id="login-logout" class="">
+                                        <!-- <ul class="logout tranform-logout">
+                                                        <li><a id="login-logout" href="">My Account</a></li>
+                                                        <li><a href="index.php?route=logout">Log Out</a></li>
+                                                    </ul> -->
+                                    </li>
+                                </ul>
+                            </span>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="second-hd-contai">
+                    <div class="second-header">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="index.html">TRANG CHỦ</a></li>
+                                <li><a href="introduce.html">GIỚI THIỆU</a></li>
+                                <li><a href="products.html">SẢN PHẨM</a></li>
+                                <li><a href="news.html">TIN TỨC</a></li>
+                                <li><a href="contact.html">LIÊN HỆ</a></li>
+                            </ul>
+                        </div>
+                        <div class="img-header">
+                            <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/logomwatch02.png" alt="">
+                        </div>
+                        <div class="search-header">
+                            <div class="search">
+                                <form action="index.php?route=search-product" method="POST">
+                                    <input type="text" name="product-insearch" placeholder="Tìm kiếm">
+                                    <button type="submit" name="search-product"><i class='bx bx-search'></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="cart-header">
+                            <div class="cart">
+                                <a class="a-cart" href="cart.html">
+                                    <span>GIỎ HÀNG</span>
+                                    <i class='bx bxs-cart-alt'></i>
+                                    <strong class="total-cart" id="total-cart"></strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="margin-cart-order main-introduce">
+            <article>
+                <div class="title-cart">
+                    <h5 class="cart-title active-title-cart">Giỏ hàng</h5>
+                    <i class='bx bx-chevron-right'></i>
+                    <h5><a href="order.html">Đơn hàng của tôi</a></h5>
+                </div>
+                <div class="content-cart active-content-cart">
+                    <form id="form-cart" action="" method="POST">
+                        <div class="left-content-cart">
+                            <table border="0">
+                                <tr>
+                                    <th class="name-sp" colspan="3">SẢN PHẨM</th>
+                                    <th class="title1">GIÁ</th>
+                                    <th class="title1 sluong">SỐ LƯỢNG</th>
+                                    <th class="title1">TẠM TÍNH</th>
+                                </tr>
+                                <tbody id="list-carts">
+
+                                </tbody>
+
+                            </table>
+                            <div class="btn-checkout-of-buy">
+                                <button class="continue-buy" value="logout"><i class='bx bx-left-arrow-alt'></i> <a
+                                        href="products.html">Tiếp tục xem sản phẩm</a></button>
+                                <button class="update-cart" name="submit" value="update">Cập nhật giỏ hàng</button>
+                            </div>
+
+                        </div>
+                        <div class="right-content-cart">
+                            <table border="0">
+                                <tr>
+                                    <th class="name-sp" colspan="2">CỘNG GIỎ HÀNG</th>
+                                </tr>
+                                <tr>
+                                    <td>Tạm tính</td>
+
+                                    <td class="price-checkout-sum"></td>
+                                    <input type="hidden" value="" name="sum_price">
+
+                                </tr>
+                                <tr>
+                                    <td>Phí giao hàng</td>
+                                    <td class="price-checkout">30000 vnđ</td>
+                                </tr>
+                                <tr>
+                                    <td>Giao hàng</td>
+                                    <td class="mini-font">Tùy chọn giao hàng sẽ được cập nhật trong quá trình thanh
+                                        toán.</td>
+                                </tr>
+                                <tr>
+                                    <td>Giảm giá</td>
+                                    <td>Miễn phí ship</td>
+                                </tr>
+                                <tr>
+                                    <td class="sum-price">Tổng</td>
+
+                                    <td class="price-checkout-sum sumprices">
+                                    </td>
+
+                                </tr>
+
+                            </table>
+                            <div class="discount">
+                                <form class="form-discount" action="">
+                                    <input type="text" placeholder="Nhập mã giảm giá">
+                                    <button id="clean">Áp dụng</button>
+                                </form>
+                            </div>
+                            <div class="btn-checkout">
+                                <button class="btn-pay" type="submit" name="submit" value="pay">Tiến hành đặt
+                                    hàng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </main>
+
+
+        <footer>
+            <div class="footer">
+
+
+                <div class="footer-item">
+
+                    <div class="footer-image">
+                        <div class="footer-logo">
+                            <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/logomwatch02.png" alt="">
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bx-street-view'></i>
+                            <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bx-phone-call'></i>
+                            <p>076 922 0162</p>
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bx-envelope'></i>
+                            <p>demonhunterg@gmail.com
+                            </p>
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bxs-hand'></i>
+                            <p>
+                                mon@mona.media
+                        </div>
+
+
+                    </div>
+
+                    <div class="footer-content">
+                        <h2>MENU</h2>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Trang chủ</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>GiớI thiệu</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Tin tức</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Liên hệ</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Kiểm tra đơn hàng</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Đăng ký Affilicate</p>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-content">
+                        <h2>SẢN PHẨM</h2>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Baby-G</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Edifice</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>G-Shock</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>G-Steel</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Gravity Master</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Mudmaster</p>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-form">
+                        <h2>ĐĂNG KÝ</h2>
+                        <span>Đăng ký để nhận được được thông tin mới nhất từ chúng tôi.</span>
+
+
+
+
+                        <div class="footer-form-ip">
+
+                            <div class="input-fieldd">
+                                <i class='bx bx-send'></i>
+                                <input type="text" placeholder="Email">
+                            </div>
+                        </div>
+                        <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
+
+                        <div class="footer-form-icon">
+                            <i class='bx bxl-facebook-circle'></i>
+                            <i class='bx bxl-instagram-alt'></i>
+                            <i class='bx bxs-envelope'></i>
+                            <i class='bx bxl-twitter'></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="support">
+                    <div class="contain-content">
+                        <div class="content-support">
+                            <div id="list-slider-sp" class="list-icon-support">
+                                <div class="item-icon"><i class='bx bxs-phone-call'></i></div>
+                                <div class="item-icon"><i class='bx bxl-messenger'></i></div>
+                                <div class="item-icon"><span>Zalo</span></div>
+                                <div class="item-icon"><i class='bx bx-envelope'></i></div>
+                            </div>
+
+                            <div class="close-support none-open"><i class='bx bx-x'></i></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="open-support none-open">
+                    <div class="list-open-sp">
+                        <ul>
+                            <li>
+                                <div style="background-color:#567AFF" class="icon-open mess">
+                                    <i class='bx bxl-messenger'></i>
+                                </div>
+                                <span class="chat-sp">Messenger</span>
+                            </li>
+                            <li>
+                                <div style="background-color:#1EBEA5" class="icon-open zalo">
+                                    <span>Zalo</span>
+                                </div>
+                                <span style="padding-top: 3px;" class="chat-sp">Zalo chat</span>
+                            </li>
+                            <li>
+                                <div style="background-color:#FF643A" class="icon-open email">
+                                    <i class='bx bx-envelope'></i>
+                                </div>
+                                <span class="chat-sp">Email</span>
+                            </li>
+                            <li>
+                                <div style="background-color:#4EB625" class="icon-open phone">
+                                    <i class='bx bxs-phone-call'></i>
+                                </div>
+                                <span class="chat-sp">Gọi 0362931719</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="down-sp">
+                        <i class='bx bx-caret-left'></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="content-">
+            <p> © Bản quyền thuộc về Doãn Thanh Tuấn - Phone: 036.293.1719 - Email: watchshop@gmail.com</p>
+        </div>
+        <script src="./public/scripts/main.js"></script>
+        <script src="./public/scripts/app.js"></script>
+        <script>
+            let userid = checkStatusLogin();
+            showCart(userid);
+            displaycheckTotalCart(userid);
+
+            window.onload = function () {
+                setTimeout(function () {
+                    const priceInputs = document.querySelectorAll('input[name="price-check[]"]');
+                    const quantityInputs = document.querySelectorAll('.numberProduct');
+                    // Tính tổng tiền
+                    let totalPrice = 0;
+                    for (let i = 0; i < priceInputs.length; i++) {
+                        const price = parseFloat(priceInputs[i].value);
+                        const quantity = parseInt(quantityInputs[i].value);
+                        totalPrice += price * quantity;
+                    }
+                    console.log('Tổng tiền:', totalPrice);
+                    let total = document.querySelector('.price-checkout-sum');
+                    let totaloke = document.querySelector('.sumprices');
+                    // Chuyển tổng tiền về dạng chuỗi tiền tệ
+                    const formattedTotalPrice = totalPrice.toLocaleString('vi-VN', {
+                        style: 'currency',
+                        currency: 'VND',
+                    });
+                    // Hiển thị tổng tiền
+                    total.innerText = formattedTotalPrice;
+                    totaloke.innerText = formattedTotalPrice;
+                    document.querySelector('input[name="sum_price"]').value = totalPrice;
+
+                    let numberButtons = document.querySelectorAll('.minus-numbercart, .plus-numbercart');
+                    numberButtons.forEach(function (button) {
+                        button.addEventListener('click', () => {
+                            // Lấy phần tử numberProduct tương ứng với nút được bấm
+                            let itemNumber = button.parentElement.querySelector('.numberProduct');
+                            let currentValue = parseInt(itemNumber.value);
+
+                            // Kiểm tra xem nút được bấm là minus hay plus và thực hiện tương ứng
+                            if (button.classList.contains('minus-numbercart')) {
+                                if (currentValue > 1) {
+                                    itemNumber.value = currentValue - 1;
+                                }
+                            } else if (button.classList.contains('plus-numbercart')) {
+                                itemNumber.value = currentValue + 1;
+                            }
+                        });
+                    });
+
+                    //UPDATE CART
+                    let btnUpdateCart = document.querySelector('.update-cart');
+                    btnUpdateCart.addEventListener('click', async (e) => {
+                        e.preventDefault();
+                        let quantitys = document.querySelectorAll('.numberProduct');
+                        let listIds = document.querySelectorAll('.numbera');
+                        console.log(listIds);
+                        let updatedCartItems = [];
+
+                        for (let i = 0; i < quantitys.length; i++) {
+                            let id = listIds[i].value;
+                            let quantity = quantitys[i].value.trim();
+                            let cartItem = {
+                                id: id,
+                                quantity: parseInt(quantity)
+                            };
+
+                            try {
+                                let updatedItem = await callUpdateQuantityCart(cartItem);
+                                callUpdateQuantityCarts.push(updatedItem);
+                            } catch (error) {
+                                console.error(`Error updating cart item ${id}: ${error}`);
+                            }
+                        }
+                    });
+
+                    //TIEN HANH THANH TOAN
+                    let btnPay = document.querySelector('.btn-pay');
+                    btnPay.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        window.location.href = "pay.html";
+                    });
+                }, 1000); // Đợi 1 giây để các phần tử được tạo ra
+            }
+
+
+
+        </script>
+</body>
+
+
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./public/style/style.css" >
+    <title>Watch Store</title>
+</head>
+<body>
+    <div class="container">
+        <header>  
+            <div class="header">
+                            <div class="first-header">
+                                <div class="address-header">
+                                    <i class='bx bxs-home-smile'></i>
+                                    <span>Shop: 65 Phạm Như Xương, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng</span>
+                                </div>
+                                <div class="contact-header">
+                                    <div class="admin">
+                                        <a id="link-admin" class="admin" href="./admin/index.html">Admin Manager</a>
+                                    </div>
+                                    <div class="first-contact">
+                                        <i class='bx bxs-phone-call'></i>
+                                        <span>Hotline: 036.293.1719</span>
+                                    </div>
+                                    <div class="second-contact">
+                                        <i class='bx bxs-user'></i>
+                                        <span class="login login-header" >
+                                            <ul>
+                                                <li id="login-logout" class="">
+                                                    <!-- <ul class="logout tranform-logout">
+                                                        <li><a id="login-logout" href="">My Account</a></li>
+                                                        <li><a href="index.php?route=logout">Log Out</a></li>
+                                                    </ul> -->
+                                                </li>
+                                            </ul>
+                                        </span>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="second-hd-contai">
+                                <div class="second-header">
+                                    <div class="menu">
+                                        <ul>
+                                            <li><a href="index.html">TRANG CHỦ</a></li>
+                                            <li><a href="introduce.html">GIỚI THIỆU</a></li>
+                                            <li><a href="products.html">SẢN PHẨM</a></li>
+                                            <li><a href="news.html">TIN TỨC</a></li>
+                                            <li><a href="contact.html">LIÊN HỆ</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="img-header">
+                                        <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/logomwatch02.png" alt="">
+                                    </div>
+                                    <div class="search-header">
+                                        <div class="search">
+                                            <form action="index.php?route=search-product" method="POST">
+                                                <input type="text" name="product-insearch" placeholder="Tìm kiếm">
+                                                <button type="submit" name="search-product"><i class='bx bx-search'></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="cart-header">
+                                        <div class="cart">
+                                            <a class="a-cart" href="cart.html">
+                                                <span>GIỎ HÀNG</span>
+                                                <i class='bx bxs-cart-alt'></i>
+                                                <strong class="total-cart" id="total-cart"></strong>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        </header>
+
+        <main class="margin-cart-order main-introduce">
+            <article class="news">
+                <div class="title-news">
+                    <h1>STORE LOCATOR FOR ASIAN LOCATION</h1>
+                </div>
+                <div class="content-news">
+                    <div class="btn-locations">
+                        <div class="btn-loca">
+                            <button>VIETNAM <i class='bx bx-copy'></i></button>
+                        </div>
+                        <div class="btn-loca">
+                            <button>HONGKONG / MACAU <i class='bx bx-copy'></i></button>
+                        </div>
+                        <div class="btn-loca">
+                            <button>MALAYSIA <i class='bx bx-copy'></i></button>
+                        </div>
+                        <div class="btn-loca">
+                            <button>SINGAPORE <i class='bx bx-copy'></i></button>
+                        </div>
+                        <div class="btn-loca">
+                            <button>THAILAND <i class='bx bx-copy'></i></button>
+                        </div>
+                        <div class="btn-loca">
+                            <button>PAKISTAN <i class='bx bx-copy'></i></button>
+                        </div>
+                        <div class="btn-loca">
+                            <button>AUSTRALIA <i class='bx bx-copy'></i></button>
+                        </div>
+                        <div class="btn-loca">
+                            <button>PHILIPPINES <i class='bx bx-copy'></i></button>
+                        </div>
+                        <div class="btn-loca">
+                            <button>TURKEY <i class='bx bx-copy'></i></button>
+                        </div>
+                        <div class="btn-loca">
+                            <button>MYANMAR <i class='bx bx-copy'></i></button>
+                        </div>
+                        <div class="btn-loca">
+                            <button>KOREA <i class='bx bx-copy'></i></button>
+                        </div>
+                        <div class="btn-loca">
+                            <button>INDIA <i class='bx bx-copy'></i></button>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="title-content-news">
+                        <h3>G-SHOCK STORE</h3>                
+                    </div>
+                    <div class="list-locations">
+                        <div class="location">
+                            <div class="img">
+                                <img style="height: 270px;" src="./public/image/contact/vn.jpg" alt="">
+                            </div>
+                            <div class="content-location">
+                                <h3>G-SHOCK STORE M-WATCH</h3>
+                                <span>65 Pham Nhu Xuong, Lien Chieu, Da Nang</span>
+                                <h5>VIETNAM</h5>
+                                <span>+36 293 1719</span>
+                                <div class="btn-map">
+                                    <button>MAP <i class='bx bx-copy'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="img">
+                                <img src="./public/image/contact/shop01-01.avif" alt="">
+                            </div>
+                            <div class="content-location">
+                                <h3>G-SHOCK STORE SOHO NYC</h3>
+                                <span>454 West Broadway New York, NY 10012</span>
+                                <h5>USA</h5>
+                                <span>+1 212 533 8700</span>
+                                <div class="btn-map">
+                                    <button>MAP <i class='bx bx-copy'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="img">
+                                <img src="./public/image/contact/shop02-01.avif" alt="">
+                            </div>
+                            <div class="content-location">
+                                <h3>G-SHOCK STORE LONDON</h3>
+                                <span>56a Carnaby Street London W1F 9QF</span>
+                                <h5>UNITED KINGDOM</h5>
+                                <span>+44 20 7494 2884</span>
+                                <div class="btn-map">
+                                    <button>MAP <i class='bx bx-copy'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="img">
+                                <img src="./public/image/contact/shop03-01.webp" alt="">
+                            </div>
+                            <div class="content-location">
+                                <h3>G-SHOCK MARAIS PARIS STORE</h3>
+                                <span>5 Rue Sainte-Croix de la Bretonnerie, Paris, 75004</span>
+                                <h5>FRANCE</h5>
+                                <span>+33 1 80 49 07 5</span>
+                                <div class="btn-map">
+                                    <button>MAP <i class='bx bx-copy'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="img">
+                                <img src="./public/image/contact/shop04-01.avif" alt="">
+                            </div>
+                            <div class="content-location">
+                                <h3>G-SHOCK CORSO COMO</h3>
+                                <span>Corso Como 9, 20154, Milano</span>
+                                <h5>ITALY</h5>
+                                <span>+39 02 8725 0655</span>
+                                <div class="btn-map">
+                                    <button>MAP <i class='bx bx-copy'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="img">
+                                <img src="./public/image/contact/shop05-01.avif" alt="">
+                            </div>
+                            <div class="content-location">
+                                <h3>G-SHOCK STORE FLACON</h3>
+                                <span>Bolshaya Novodmitrovskaya str, 36/2, Moscow, 127015</span>
+                                <h5>RUSSIA</h5>
+                                <span>+7 915 143 50 71</span>
+                                <div class="btn-map">
+                                    <button>MAP <i class='bx bx-copy'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="img">
+                                <img src="./public/image/contact/shop06-01.avif" alt="">
+                            </div>
+                            <div class="content-location">
+                                <h3>G-SHOCK STORE SHANGHAI</h3>
+                                <span>856 Huaihai Road（M），Shanghai 200020</span>
+                                <h5>CHINA</h5>
+                                <span>+86 021 3363 2070</span>
+                                <div class="btn-map">
+                                    <button>MAP <i class='bx bx-copy'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="img">
+                                <img src="./public/image/contact/shop07-01.avif" alt="">
+                            </div>
+                            <div class="content-location">
+                                <h3>G-SHOCK STORE BEIJING</h3>
+                                <span>Unit s2-19, 1F, Block2, No.19 Sanlitun road, Chaoyang District, Beijing</span>
+                                <h5>CHINA</h5>
+                                <span>+86 010 8458 4069</span>
+                                <div class="btn-map">
+                                    <button>MAP <i class='bx bx-copy'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="img">
+                                <img src="./public/image/contact/shop08-01 (1).avif" alt="">
+                            </div>
+                            <div class="content-location">
+                                <h3>G-SHOCK STORE TAIPEI</h3>
+                                <span>1F., NO.55, LN. 161, Sec. 1, DUNHUA S. RD., Da’an Dist., Taipei City 106</span>
+                                <h5>TAIWAN</h5>
+                                <span>+33 1 80 49 07 5</span>
+                                <div class="btn-map">
+                                    <button>MAP <i class='bx bx-copy'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="img">
+                                <img src="./public/image/contact/shop09-01 (1).avif" alt="">
+                            </div>
+                            <div class="content-location">
+                                <h3>G-SHOCK STORE FUKUOKA</h3>
+                                <span>1-2-74 Sumiyoshi, Hakata-ku, Fukuoka City,
+                                Fukuoka Prefecture, 812-0018</span>
+                                <h5>JAPAN</h5>
+                                <span>+81 92 273 1738</span>
+                                <div class="btn-map">
+                                    <button>MAP <i class='bx bx-copy'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="img">
+                                <img src="./public/image/contact/shop10-01.avif" alt="">
+                            </div>
+                            <div class="content-location">
+                                <h3>G-SHOCK STORE SENDAI</h3>
+                                <span>Ever-i chuo 1F, 2-1-27 chuo, Aoba-ku, Sendai, Miyagi Prefecture, 980-0021</span>
+                                <h5>JAPAN</h5>
+                                <span>+81 22 796 7080</span>
+                                <div class="btn-map">
+                                    <button>MAP <i class='bx bx-copy'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="img">
+                                <img src="./public/image/contact/shop11-01.avif" alt="">
+                            </div>
+                            <div class="content-location">
+                                <h3>G-SHOCK STORE MARUNOUCHI</h3>
+                                <span>KITTE Marunouchi 3F, 2-7-2 Marunouchi, Chiyoda-ku, Tokyo, 100-7090</span>
+                                <h5>JAPAN</h5>
+                                <span>+81 3 3217 2026</span>
+                                <div class="btn-map">
+                                    <button>MAP <i class='bx bx-copy'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="img">
+                                <img src="./public/image/contact/shop12-01.avif" alt="">
+                            </div>
+                            <div class="content-location">
+                                <h3>G-SHOCK STORE SAPPORO</h3>
+                                <span>1F (sitatte sapporo) 3-1-20 Kita2jonishi, Chuo-ku, Sapporo-shi, Hokkaido, 060-0002</span>
+                                <h5>JAPAN</h5>
+                                <span>+81 11 205 0340</span>
+                                <div class="btn-map">
+                                    <button>MAP <i class='bx bx-copy'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="img">
+                                <img src="./public/image/contact/shop13-01 (1).avif" alt="">
+                            </div>
+                            <div class="content-location">
+                                <h3>G-SHOCK STORE GINZA</h3>
+                                <span>Tokyu Plaza Ginza 5F, 5-2-1 Ginza, Chuo-ku, Tokyo, 104-0061</span>
+                                <h5>JAPAN</h5>
+                                <span>+81 3 6264 5780</span>
+                                <div class="btn-map">
+                                    <button>MAP <i class='bx bx-copy'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </main>
+
+
+        <footer>
+            <div class="footer">
+                          
+                           
+                                <div class="footer-item">
+            
+                                <div class="footer-image">
+                                    <div class="footer-logo">
+                                        <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/logomwatch02.png" alt="">
+                                    </div>
+            
+                                    <div class="footer-image-item">
+                                    <i class='bx bx-street-view'></i>
+                                    <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                                    </div>
+            
+                                    <div class="footer-image-item">
+                                    <i class='bx bx-phone-call'></i>
+                                    <p>076 922 0162</p>
+                                    </div>
+            
+                                    <div class="footer-image-item">
+                                    <i class='bx bx-envelope' ></i>
+                                    <p>demonhunterg@gmail.com 
+                                  </p>
+                                    </div>
+            
+                                    <div class="footer-image-item">
+                                    <i class='bx bxs-hand'></i>
+                                    <p>
+                                    mon@mona.media
+                                    </div>
+            
+            
+                                </div>
+            
+                                <div class="footer-content">
+                                    <h2>MENU</h2>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Trang chủ</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>GiớI thiệu</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Tin tức</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Liên hệ</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Kiểm tra đơn hàng</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Đăng ký Affilicate</p>
+                                    </div>
+                                </div>
+            
+            
+                                <div class="footer-content">
+                                    <h2>SẢN PHẨM</h2>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Baby-G</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Edifice</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>G-Shock</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>G-Steel</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Gravity Master</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Mudmaster</p>
+                                    </div>
+                                </div>
+            
+            
+                                <div class="footer-form">
+                                    <h2>ĐĂNG KÝ</h2>
+                                    <span>Đăng ký để nhận được được thông tin mới nhất từ chúng tôi.</span>
+            
+                           
+                               
+            
+                                <div class="footer-form-ip">
+            
+                                <div class="input-fieldd">
+                                <i class='bx bx-send'></i>
+                            <input type="text" placeholder="Email">
+                           </div>
+                                </div>
+                                <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
+            
+                                <div class="footer-form-icon">
+                                <i class='bx bxl-facebook-circle'></i>
+                                <i class='bx bxl-instagram-alt'></i>
+                                <i class='bx bxs-envelope' ></i>
+                                <i class='bx bxl-twitter' ></i>
+                                </div>
+            
+                                </div>
+            
+                                </div>
+            
+            
+            
+            
+                                
+                            
+            
+            
+            
+            
+            
+            
+                            <div class="support">
+                                <div class="contain-content">
+                                    <div class="content-support">
+                                        <div id="list-slider-sp" class="list-icon-support">
+                                            <div class="item-icon"><i class='bx bxs-phone-call'></i></div>
+                                            <div class="item-icon"><i class='bx bxl-messenger'></i></div>
+                                            <div class="item-icon"><span>Zalo</span></div>
+                                            <div class="item-icon"><i class='bx bx-envelope'></i></div>
+                                        </div>
+            
+                                        <div class="close-support none-open"><i class='bx bx-x'></i></div>
+                                    </div>
+            
+                                </div>
+                                
+                            </div>
+                            <div class="open-support none-open">
+                                    <div class="list-open-sp">
+                                        <ul>
+                                            <li>
+                                                <div style="background-color:#567AFF" class="icon-open mess">
+                                                    <i class='bx bxl-messenger'></i>
+                                                </div> 
+                                                <span class="chat-sp">Messenger</span>
+                                            </li>
+                                            <li>
+                                                <div style="background-color:#1EBEA5" class="icon-open zalo">
+                                                    <span>Zalo</span>
+                                                </div> 
+                                                <span style="padding-top: 3px;" class="chat-sp">Zalo chat</span>
+                                            </li>
+                                            <li>
+                                                <div style="background-color:#FF643A" class="icon-open email">
+                                                    <i class='bx bx-envelope'></i>
+                                                </div> 
+                                                <span class="chat-sp">Email</span>
+                                            </li>
+                                            <li>
+                                                <div style="background-color:#4EB625" class="icon-open phone">
+                                                    <i class='bx bxs-phone-call'></i>
+                                                </div> 
+                                                <span class="chat-sp">Gọi 0362931719</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="down-sp">
+                                    <i class='bx bx-caret-left' ></i>
+                                    </div>
+                            </div>
+                            </div>
+            </footer>
+                <div class="content-">
+               <p> © Bản quyền thuộc về Doãn Thanh Tuấn - Phone: 036.293.1719 - Email: watchshop@gmail.com</p>
+                </div>
+            
+</body>
+<script src="./public/scripts/main.js"></script>
+<script src="./public/scripts/app.js"></script>
+<script>
+    window.onload = function() {
+        let userid = checkStatusLogin();
+
+        displaycheckTotalCart(userid);
+    }
+</script>
+</html>

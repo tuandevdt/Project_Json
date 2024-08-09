@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./public/style/style.css">
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="first-header">
+                    <div class="address-header">
+                        <i class='bx bxs-home-smile'></i>
+                        <span>Shop: 65 Phạm Như Xương, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng</span>
+                    </div>
+                    <div class="contact-header">
+                        <div class="admin">
+                            <a id="link-admin" class="admin" href="./admin/index.html">Admin Manager</a>
+                        </div>
+                        <div class="first-contact">
+                            <i class='bx bxs-phone-call'></i>
+                            <span>Hotline: 036.293.1719</span>
+                        </div>
+                        <div class="second-contact">
+                            <i class='bx bxs-user'></i>
+                            <span class="login login-header">
+                                <ul>
+                                    <li id="login-logout" class="">
+                                        <!-- <ul class="logout tranform-logout">
+                                                        <li><a id="login-logout" href="">My Account</a></li>
+                                                        <li><a href="index.php?route=logout">Log Out</a></li>
+                                                    </ul> -->
+                                    </li>
+                                </ul>
+                            </span>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="second-hd-contai">
+                    <div class="second-header">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="index.html">TRANG CHỦ</a></li>
+                                <li><a href="introduce.html">GIỚI THIỆU</a></li>
+                                <li><a href="products.html">SẢN PHẨM</a></li>
+                                <li><a href="news.html">TIN TỨC</a></li>
+                                <li><a href="contact.html">LIÊN HỆ</a></li>
+                            </ul>
+                        </div>
+                        <div class="img-header">
+                            <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/logomwatch02.png" alt="">
+                        </div>
+                        <div class="search-header">
+                            <div class="search">
+                                <form action="index.php?route=search-product" method="POST">
+                                    <input type="text" name="product-insearch" placeholder="Tìm kiếm">
+                                    <button type="submit" name="search-product"><i class='bx bx-search'></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="cart-header">
+                            <div class="cart">
+                                <a class="a-cart" href="cart.html">
+                                    <span>GIỎ HÀNG</span>
+                                    <i class='bx bxs-cart-alt'></i>
+                                    <strong class="total-cart" id="total-cart"></strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="main-introduce">
+            <article>
+                <div class="img-title-introduce">
+                    <img src="https://www.casio.com/content/casio/locales/intl/en/products/watches/products/type/connect/_jcr_content/root/responsivegrid/container_copy/image.casiocoreimg.jpeg/1700436149058/hero-pc-m.jpeg"
+                        alt="">
+                </div>
+
+                <div class="slider-product-contai">
+                    <div id="product-selling" class="slider-products">
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/type/full-metal/_jcr_content/root/responsivegrid/container_1975693142/content_panel_list/content_panel_202104211430562583/image.casiocoreimg.jpeg/1694480526601/hero-notext-sp.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GMW-B5000TCC-1</h5>
+                                    </a>
+                                    <span>Circuit board camouflage design, featuring a super-hard titanium alloy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/type/full-metal/_jcr_content/root/responsivegrid/container_1975693142/content_panel_list/content_panel_202104_1158433663/image.casiocoreimg.jpeg/1694480526658/thumb.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GM-B2100</h5>
+                                    </a>
+                                    <span>Octagonal form with full-metal design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/type/full-metal/_jcr_content/root/responsivegrid/container_1975693142/content_panel_list/content_panel_202104/image.casiocoreimg.jpeg/1694480526703/thumb.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GMW-B5000TVB</h5>
+                                    </a>
+                                    <span>Cyber gear straight from the virtual world</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/type/full-metal/_jcr_content/root/responsivegrid/container_1975693142/content_panel_list/content_panel_202104211430562570/image.casiocoreimg.jpeg/1694480526784/products-sp-m.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GMW-B5000</h5>
+                                    </a>
+                                    <span>EVOLUTION BACK TO THE ORIGIN</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/type/full-metal/_jcr_content/root/responsivegrid/container_1975693142/content_panel_list/content_panel_202104211430562571/image.casiocoreimg.jpeg/1694480526825/products-sp-m.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>AWM-500</h5>
+                                    </a>
+                                    <span>THE FULL METAL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/g-steel/_jcr_content/root/responsivegrid/container_1975693142/content_panel_list/content_panel_202104/image.casiocoreimg.jpeg/1707354241176/og-w800h800-notext.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GST-B600</h5>
+                                    </a>
+                                    <span>Smallest G-STEEL yet</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/g-steel/_jcr_content/root/responsivegrid/container_1975693142/content_panel_list/content_panel_202104211430562583/image.casiocoreimg.jpeg/1707354241039/products-sp.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GST-B400</h5>
+                                    </a>
+                                    <span>Original, functional beauty enabled by combining materials — stylish and
+                                        tough</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/g-steel/_jcr_content/root/responsivegrid/container_1975693142/content_panel_list/content_panel_202104211430562572/image.casiocoreimg.jpeg/1707354241086/products-sp.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GST-B100 Series</h5>
+                                    </a>
+                                    <span>Bluetooth® CHRONO SOLAR</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/air/_jcr_content/root/responsivegrid/container_1983787584/container_1975693142/content_panel_list/content_panel_202104211430562570/image.casiocoreimg.jpeg/1644398141067/products-sp.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GWR-B1000</h5>
+                                    </a>
+                                    <span>Carbon Core Guard Structure</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/air/_jcr_content/root/responsivegrid/container_1983787584/container_1975693142/content_panel_list/content_panel_202104211430562571/image.casiocoreimg.jpeg/1644398141095/products-sp-m.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GPW-2000</h5>
+                                    </a>
+                                    <span>Absolute Toughness, Absolute Accuracy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/air/_jcr_content/root/responsivegrid/container_1983787584/container_1975693142/content_panel_list/content_panel_202104211430562572/image.casiocoreimg.jpeg/1644398141122/products-sp-m.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GR-B200</h5>
+                                    </a>
+                                    <span>Gravitymaster x Quad Sensor</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/air/_jcr_content/root/responsivegrid/container_1983787584/container_1975693142/content_panel_list/content_panel_202104211430562583/image.casiocoreimg.jpeg/1644398141149/products-sp.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GR-B100</h5>
+                                    </a>
+                                    <span>THE TOUGH WATCH FOR PILOTS.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/air/_jcr_content/root/responsivegrid/container_1983787584/container_1975693142/content_panel_list/content_panel_202104211453031144/image.casiocoreimg.jpeg/1644398141174/products-sp.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GW / GA Series</h5>
+                                    </a>
+                                    <span>In the SKY</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/land/_jcr_content/root/responsivegrid/container_1983787584/container_1975693142/content_panel_list/content_panel_202312281029085978/image.casiocoreimg.jpeg/1703727895288/og-w800h800-notext.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>RANGEMAN GPR-H1000</h5>
+                                    </a>
+                                    <span>6 sensors + GPS functionality to track movement in real time</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/land/_jcr_content/root/responsivegrid/container_1983787584/container_1975693142/content_panel_list/content_panel_202309271032547347/image.casiocoreimg.jpeg/1703727895068/og-w800h800-notext.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GWG-B1000</h5>
+                                    </a>
+                                    <span>MUDMASTER flagship watch: Strength and functionality for mastery of extreme
+                                        conditions</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/land/_jcr_content/root/responsivegrid/container_1983787584/container_1975693142/content_panel_list/content_panel_202104211430562572/image.casiocoreimg.jpeg/1703727895098/og-w800h800-notext.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GW-9500</h5>
+                                    </a>
+                                    <span>A slimmer profile, with enhanced readability and ease of use: MUDMAN with a
+                                        duplex LCD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/land/_jcr_content/root/responsivegrid/container_1983787584/container_1975693142/content_panel_list/content_panel_202110111453280926/image.casiocoreimg.jpeg/1703727895126/products-sp.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GWG-2000</h5>
+                                    </a>
+                                    <span>Forged carbon bezel takes toughness to a new level, prepares you for the
+                                        extremes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/land/_jcr_content/root/responsivegrid/container_1983787584/container_1975693142/content_panel_list/content_panel_202104211430562570/image.casiocoreimg.jpeg/1703727895153/products-sp-m.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GWG-1000</h5>
+                                    </a>
+                                    <span>MUD-RESISTANT STRUCTURE x TRIPLE SENSOR</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/land/_jcr_content/root/responsivegrid/container_1983787584/container_1975693142/content_panel_list/content_panel_202104211430562571/image.casiocoreimg.jpeg/1703727895180/products-sp-m.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GG-B100</h5>
+                                    </a>
+                                    <span>STRENGTH AND FUNCTIONALITY TO SURVIVE THE EXTREMES</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/land/_jcr_content/root/responsivegrid/container_1983787584/container_1975693142/content_panel_list/content_panel_202104211430562583/image.casiocoreimg.jpeg/1703727895210/products-sp-m.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GG-1000</h5>
+                                    </a>
+                                    <span>On the LAND</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/land/_jcr_content/root/responsivegrid/container_1983787584/container_1975693142/content_panel_list/content_panel_202104211453031144/image.casiocoreimg.jpeg/1703727895237/products-sp.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GW-9400</h5>
+                                    </a>
+                                    <span>BUILT FOR RIGOROUS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-model">
+                            <div class="model-sl">
+                                <div class="img-sell">
+                                    <a href=""><img
+                                            src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/products/land/_jcr_content/root/responsivegrid/container_1983787584/container_1975693142/content_panel_list/content_panel_202104211453031155/image.casiocoreimg.jpeg/1703727895265/products-sp.jpeg"
+                                            alt=""></a>
+                                </div>
+                                <div class="name-product-sell">
+                                    <a href="">
+                                        <h5>GW-9300</h5>
+                                    </a>
+                                    <span>A STRUCTURE THAT THRIVES ON ROUGH USE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-products-contai">
+                    <div class="title-list-product">
+                        <ul id="categories-id">
+                            <!-- <li class="menu-item active-title-product">Category Name</li> -->
+                        </ul>
+                    </div>
+                    <div class="list-products">
+                        <div class="list-item">
+                            <!-- G-STEEL -->
+                            <div id="products-a" class="item-product active-list">
+
+                            </div>
+
+                            <!-- MASTER OF G-AIR -->
+                            <div id="products-b" class="item-product none-list-item">
+                                <div class="pro-item">
+                                    <div class="model-sl">
+                                        <div class="img-sell">
+                                            <a href="">
+                                                <img src="" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="name-product-item">
+                                            <a href="">
+                                                <h5>20.000.000 VNĐ</h5>
+                                            </a>
+                                            <span>PRODUCTNAME</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- MASTER OF G-LAND -->
+                            <div id="products-c" class="item-product none-list-item">
+                                <div class="pro-item">
+                                    <div class="model-sl">
+                                        <div class="img-sell">
+                                            <a href="">
+                                                <img src="" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="name-product-item">
+                                            <a href="">
+                                                <h5>20.000.000 VNĐ</h5>
+                                            </a>
+                                            <span>PRODUCTNAMEaaaaa</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="real-100">
+                    <div class="camket">
+                        <div class="icon-camket">
+                            <img src="https://image.donghohaitrieu.com/wp-content/uploads/2023/09/logo-dong-ho-hai-trieu-full-mau.png"
+                                alt="">
+                        </div>
+                        <div class="content-camket">
+                            <h6>CAM KẾT CHÍNH HÃNG 100%</h6>
+                            <span>Tất cả sản phẩm của M-Watch bán ra đều có giấy cam kết chính hãng, trường hợp phát
+                                hiện hàng fake, M-Watch cam kết hoàn 500% giá trị.</span>
+                        </div>
+                    </div>
+                    <div class="camket">
+                        <div class="icon-camket">
+                            <img src="https://image.donghohaitrieu.com/wp-content/uploads/2023/09/logo-dong-ho-hai-trieu-full-mau.png"
+                                alt="">
+                        </div>
+                        <div class="content-camket">
+                            <h6>CHẾ ĐỘ BẢO HÀNH QUỐC TẾ</h6>
+                            <span>Tất cả đồng hồ bán ra tại M-Watch đều có phiếu bảo hành quốc tế của hãng, 100% sử dụng
+                                được tại trung tâm bảo hành hãng tại Việt Nam.</span>
+                        </div>
+                    </div>
+                    <div class="camket">
+                        <div class="icon-camket">
+                            <img src="https://image.donghohaitrieu.com/wp-content/uploads/2023/09/logo-dong-ho-hai-trieu-full-mau.png"
+                                alt="">
+                        </div>
+                        <div class="content-camket">
+                            <h6>TẬN TÂM VỚI KHÁCH HÀNG</h6>
+                            <span>Mỗi khách hàng đến với M-Watch đều như người nhà, được tiếp nhiệt tình, vui vẻ tạo cho
+                                khách hàng cảm giác thoải mái nhất.</span>
+                        </div>
+                    </div>
+                    <div class="camket">
+                        <div class="icon-camket">
+                            <img src="https://image.donghohaitrieu.com/wp-content/uploads/2023/09/logo-dong-ho-hai-trieu-full-mau.png"
+                                alt="">
+                        </div>
+                        <div class="content-camket">
+                            <h6>TIÊU CHUẨN BẢO HÀNH</h6>
+                            <span>Trung tâm bảo hành M-Watch trang bị 100% máy móc chuyên dụng nhập khẩu, linh kiện
+                                chính hãng, quy trình bài bản.</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </article>
+        </main>
+
+        <footer>
+            <div class="footer">
+
+
+                <div class="footer-item">
+
+                    <div class="footer-image">
+                        <div class="footer-logo">
+                            <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/logomwatch02.png" alt="">
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bx-street-view'></i>
+                            <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bx-phone-call'></i>
+                            <p>076 922 0162</p>
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bx-envelope'></i>
+                            <p>demonhunterg@gmail.com
+                            </p>
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bxs-hand'></i>
+                            <p>
+                                mon@mona.media
+                        </div>
+
+
+                    </div>
+
+                    <div class="footer-content">
+                        <h2>MENU</h2>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Trang chủ</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>GiớI thiệu</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Tin tức</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Liên hệ</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Kiểm tra đơn hàng</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Đăng ký Affilicate</p>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-content">
+                        <h2>SẢN PHẨM</h2>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Baby-G</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Edifice</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>G-Shock</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>G-Steel</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Gravity Master</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Mudmaster</p>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-form">
+                        <h2>ĐĂNG KÝ</h2>
+                        <span>Đăng ký để nhận được được thông tin mới nhất từ chúng tôi.</span>
+
+
+
+
+                        <div class="footer-form-ip">
+
+                            <div class="input-fieldd">
+                                <i class='bx bx-send'></i>
+                                <input type="text" placeholder="Email">
+                            </div>
+                        </div>
+                        <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
+
+                        <div class="footer-form-icon">
+                            <i class='bx bxl-facebook-circle'></i>
+                            <i class='bx bxl-instagram-alt'></i>
+                            <i class='bx bxs-envelope'></i>
+                            <i class='bx bxl-twitter'></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="support">
+                    <div class="contain-content">
+                        <div class="content-support">
+                            <div id="list-slider-sp" class="list-icon-support">
+                                <div class="item-icon"><i class='bx bxs-phone-call'></i></div>
+                                <div class="item-icon"><i class='bx bxl-messenger'></i></div>
+                                <div class="item-icon"><span>Zalo</span></div>
+                                <div class="item-icon"><i class='bx bx-envelope'></i></div>
+                            </div>
+
+                            <div class="close-support none-open"><i class='bx bx-x'></i></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="open-support none-open">
+                    <div class="list-open-sp">
+                        <ul>
+                            <li>
+                                <div style="background-color:#567AFF" class="icon-open mess">
+                                    <i class='bx bxl-messenger'></i>
+                                </div>
+                                <span class="chat-sp">Messenger</span>
+                            </li>
+                            <li>
+                                <div style="background-color:#1EBEA5" class="icon-open zalo">
+                                    <span>Zalo</span>
+                                </div>
+                                <span style="padding-top: 3px;" class="chat-sp">Zalo chat</span>
+                            </li>
+                            <li>
+                                <div style="background-color:#FF643A" class="icon-open email">
+                                    <i class='bx bx-envelope'></i>
+                                </div>
+                                <span class="chat-sp">Email</span>
+                            </li>
+                            <li>
+                                <div style="background-color:#4EB625" class="icon-open phone">
+                                    <i class='bx bxs-phone-call'></i>
+                                </div>
+                                <span class="chat-sp">Gọi 0362931719</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="down-sp">
+                        <i class='bx bx-caret-left'></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="content-">
+            <p> © Bản quyền thuộc về Doãn Thanh Tuấn - Phone: 036.293.1719 - Email: watchshop@gmail.com</p>
+        </div>
+    </div>
+    <script src="./public/scripts/main.js"></script>
+    <script src="./public/scripts/app.js"></script>
+    <script>
+        startCategories();
+        startProductId1();
+        startProductId2();
+        startProductId3();
+        let userid = checkStatusLogin();
+
+        displaycheckTotalCart(userid);
+
+        setTimeout(function () {
+            let menuItems = document.querySelectorAll('.menu-item');
+            let listProducts = document.querySelectorAll('.item-product');
+
+            menuItems.forEach(function (n, i) {
+                n.addEventListener('click', () => {
+                    document.querySelector('.active-title-product').classList.remove('active-title-product');
+                    n.classList.add('active-title-product');
+
+                    document.querySelector('.active-list').classList.add('none-list-item');
+                    document.querySelector('.active-list').classList.remove('active-list');
+                    listProducts[i].classList.remove('none-list-item');
+                    listProducts[i].classList.add('active-list');
+
+                });
+            });
+        }, 1000)
+    </script>
+</body>
+
+
+</html>

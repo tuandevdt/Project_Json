@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./public/style/style.css">
+    <title>Pay</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="first-header">
+                    <div class="address-header">
+                        <i class='bx bxs-home-smile'></i>
+                        <span>Shop: 65 Phạm Như Xương, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng</span>
+                    </div>
+                    <div class="contact-header">
+                        <div class="admin">
+                            <a id="link-admin" class="admin" href="./admin/index.html">Admin Manager</a>
+                        </div>
+                        <div class="first-contact">
+                            <i class='bx bxs-phone-call'></i>
+                            <span>Hotline: 036.293.1719</span>
+                        </div>
+                        <div class="second-contact">
+                            <i class='bx bxs-user'></i>
+                            <span class="login login-header">
+                                <ul>
+                                    <li id="login-logout" class="">
+                                        <!-- <ul class="logout tranform-logout">
+                                                        <li><a id="login-logout" href="">My Account</a></li>
+                                                        <li><a href="index.php?route=logout">Log Out</a></li>
+                                                    </ul> -->
+                                    </li>
+                                </ul>
+                            </span>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="second-hd-contai">
+                    <div class="second-header">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="index.html">TRANG CHỦ</a></li>
+                                <li><a href="introduce.html">GIỚI THIỆU</a></li>
+                                <li><a href="products.html">SẢN PHẨM</a></li>
+                                <li><a href="news.html">TIN TỨC</a></li>
+                                <li><a href="contact.html">LIÊN HỆ</a></li>
+                            </ul>
+                        </div>
+                        <div class="img-header">
+                            <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/logomwatch02.png" alt="">
+                        </div>
+                        <div class="search-header">
+                            <div class="search">
+                                <form action="index.php?route=search-product" method="POST">
+                                    <input type="text" name="product-insearch" placeholder="Tìm kiếm">
+                                    <button type="submit" name="search-product"><i class='bx bx-search'></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="cart-header">
+                            <div class="cart">
+                                <a class="a-cart" href="cart.html">
+                                    <span>GIỎ HÀNG</span>
+                                    <i class='bx bxs-cart-alt'></i>
+                                    <strong class="total-cart" id="total-cart"></strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="margin-cart-order main-introduce">
+            <article>
+                <div class="title-cart">
+                    <h5 class="cart-title active-title-cart">Thanh toán</h5>
+                </div>
+
+                <div class="content-pay active-content-cart">
+                    <form id="form-pay" class="form-content-pay " action="" method="POST">
+                        <div class="left-content-pay">
+                            <div class="title-cont-pay">
+                                <h4>THÔNG TIN THANH TOÁN</h4>
+                            </div>
+                            <div class="name-pay">
+                                <div class="first-name">
+                                    <label for="">Họ và tên <span>*</span></label>
+                                    <input type="text" name="fullname" class="firstname" value="" required>
+                                    <small class="error"></small>
+                                </div>
+                            </div>
+                            <div class="address">
+                                <div class="country">
+                                    <b>Quốc gia/Khu vực</b>
+                                    <b class="Vietnam">Việt Nam</b>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Tỉnh/TP <span>*</span></label>
+                                    <input type="text" name="city" class="city" value="" required>
+                                    <small class="error"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Quận/Huyện <span>*</span></label>
+                                    <input type="text" name="district" class="district" value="" required>
+                                    <small class="error"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Xã/Phường <span>*</span></label>
+                                    <input type="text" name="ward" class="ward" value="" required>
+                                    <small class="error"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Địa chỉ <span>*</span></label>
+                                    <input type="text" placeholder="Địa chỉ chi tiết" name="street"
+                                        class="address-detail" value="" required>
+                                    <small class="error"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Số điện thoại <span>*</span></label>
+                                    <input type="text" name="phone" class="phone" value="" required>
+                                    <small class="error"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Ghi chú đơn hàng (tùy chọn)</label>
+                                    <textarea name="note" class="note" id="" cols="50" rows="10"
+                                        placeholder="Ghi chú về đơn hàng..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-content-pay">
+                            <div class="title-cont-pay">
+                                <h4>ĐƠN HÀNG CỦA BẠN</h4>
+                            </div>
+                            <table border="0">
+                                <thead>
+                                    <tr>
+                                        <th>SẢN PHẨM</th>
+                                        <th>ĐƠN GIÁ</th>
+                                        <th style="text-align:center">SỐ LƯỢNG</th>
+                                        <th>TẠM TÍNH</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="list-pays">
+
+
+
+                                </tbody>
+                                <tr>
+                                    <td>Tạm tính</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="price-checkout total-price-check" style="text-align: right;"></td>
+                                    <input type="hidden" name="sum_price" value="">
+                                </tr>
+                                <tr>
+                                    <td>Giao hàng</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Miễn phí</td>
+                                </tr>
+                                <tr>
+                                    <td class="sum-price">Tổng</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="price-checkout total-price-check"></td>
+                                </tr>
+
+
+                            </table>
+                            <!-- <div class="pay-cart">
+                                    <div class="form-check">
+                                        <div class="input">
+                                            <input class="radio-check" checked="checked" type="radio" name="checka" value="Thanh toán khi nhận hàng"> Thanh toán khi nhận hàng (COD)
+                                        </div>
+                                        <span class="note-checkout active-check">
+                                            Quý khách hàng xem và kiểm tra hàng thoải mái trước khi quyết định thanh toán. Chúng tôi khuyến khích khách hàng vui lòng bóc kiện hàng, xem và kiểm tra hàng trước khi thanh toán ( một số trường hợp quý khách để lộ thông tin đặt hàng trên bài post fanpage facebook hoặc tại một số trang giả mạo, họ sẽ gửi hàng nhái, hàng giả tới địa chỉ nhận hàng của quý khách hàng mà không cho xem hàng). <div class="blue-check">**Lưu ý: Chỉ áp dụng cho đơn hàng có tổng giá trị nhỏ hơn 50 triệu đồng. Nếu đơn hàng trên 50 triệu đồng, quý khách vui lòng chọn hình thức thanh toán khác.</div> Vui lòng tham khảo thêm chính sách thanh toán tại <a class="blue-check" href="">Chính sách thanh toán.</a>
+                                        </span>
+                                    </div>
+                                    <div class="form-check">
+                                        <div class="input">
+                                            <input class="radio-check" type="radio" name="checka" value="Nhận sản phẩm tại cửa hàng"> Nhận sản phẩm tại cửa hàng
+                                        </div>
+                                        <span class="note-checkout none-note-check">
+                                            Quý khách hàng muốn xem và nhận sản phẩm tại cửa hàng vui lòng ghi chú địa chỉ cửa hàng muốn nhận sản phẩm tại phần ghi chú đơn hàng
+                                            
+                                            <ul class="list-address-note-check">
+                                                <li><i class='bx bxs-map'></i> 65 Phạm Như Xương, Liên Chiểu, Tp Đà Nẵng</li>
+                                                <li><i class='bx bxs-map'></i> 170 Xã Đàn, Quận Đống Đa, Hà Nội</li>
+                                                <li><i class='bx bxs-map'></i> Tầng G, The Garden, Nam Từ Liêm, Hà Nội</li>
+                                                <li><i class='bx bxs-map'></i> 278 Chu Văn An, Bình Thạnh, TP.HCM</li>
+                                            </ul>
+                                            
+                                        </span>
+                                    </div>
+                                    <div class="form-check">
+                                        <div class="input">
+                                            <input class="radio-check" type="radio" name="checka" value="Thanh toán qua Momo"> Thanh toán qua Momo
+                                        </div>
+                                        <span class="note-checkout none-note-check">
+                                            Hãy mở App Momo lên và nhấn Đặt Hàng để quét mã thanh toán
+                                        </span>
+                                    </div>
+                                    <div class="form-check">
+                                        <div class="input">
+                                            <input class="radio-check" type="radio" name="checka" value="Thanh toán qua ZaloPay"> Thanh toán qua ZaloPay
+                                        </div>
+                                        <span class="note-checkout none-note-check">
+                                            Hãy mở App ZaloPay lên và nhấn Đặt Hàng để quét mã thanh toán
+                                        </span>
+                                    </div>
+                                    <div class="form-check">
+                                        <div class="input">
+                                            <input class="radio-check" type="radio" name="checka" value="Thanh toán qua ShopeePay"> Thanh toán qua ShopeePay
+                                        </div>
+                                        <span class="note-checkout none-note-check">
+                                            Hãy mở App ShopeePay lên và nhấn Đặt Hàng để quét mã thanh toán
+                                        </span>
+                                    </div>
+                                    <div class="form-check">
+                                        <div class="input">
+                                            <input class="radio-check" type="radio" name="checka" value="Thanh toán qua ATM/VISA/MasterCard-Thanh toán trả góp"> Thanh toán qua ATM/VISA/MasterCard-Thanh toán trả góp
+                                        </div>
+                                        <span class="note-checkout none-note-check">
+                                            Chọn một phương thức thanh toán
+                                            <div class="pay-by">
+                                                <div class="radio-pay-by">
+                                                    <input type="radio" name="check-pay" value="Visa/MasterCard"> Thanh toán ngay bằng thẻ quốc tế Visa/MasterCard
+                                                </div>
+                                                <div class="radio-pay-by">
+                                                    <input type="radio" name="check-pay" value="Thanh toán trả góp linh hoạt"> Thanh toán trả góp linh hoạt
+                                                </div>
+                                                <div class="radio-pay-by">
+                                                    <input type="radio" name="check-pay" value="ATM/Internet Banking/QRCode"> Thanh toán ngay bằng thẻ ATM/Internet Banking/QRCode
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>    
+                            </div> -->
+                            <div class="btn-pay-cart">
+                                <button type="submit" name="submit">Đặt hàng</button>
+                            </div>
+                            <div class="sup-checkout">
+                                <span>Khi cần hỗ trợ về cách thức đặt hàng hoặc hình thức thanh toán, quý khách vui lòng
+                                    liên hệ fanpage, zalo hoặc gọi <b>036-293-1719</b> (09h00 - 21h00)</span>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <div class="footer">
+
+
+                <div class="footer-item">
+
+                    <div class="footer-image">
+                        <div class="footer-logo">
+                            <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/logomwatch02.png" alt="">
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bx-street-view'></i>
+                            <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bx-phone-call'></i>
+                            <p>076 922 0162</p>
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bx-envelope'></i>
+                            <p>demonhunterg@gmail.com
+                            </p>
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bxs-hand'></i>
+                            <p>
+                                mon@mona.media
+                        </div>
+
+
+                    </div>
+
+                    <div class="footer-content">
+                        <h2>MENU</h2>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Trang chủ</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>GiớI thiệu</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Tin tức</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Liên hệ</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Kiểm tra đơn hàng</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Đăng ký Affilicate</p>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-content">
+                        <h2>SẢN PHẨM</h2>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Baby-G</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Edifice</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>G-Shock</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>G-Steel</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Gravity Master</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Mudmaster</p>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-form">
+                        <h2>ĐĂNG KÝ</h2>
+                        <span>Đăng ký để nhận được được thông tin mới nhất từ chúng tôi.</span>
+
+
+
+
+                        <div class="footer-form-ip">
+
+                            <div class="input-fieldd">
+                                <i class='bx bx-send'></i>
+                                <input type="text" placeholder="Email">
+                            </div>
+                        </div>
+                        <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
+
+                        <div class="footer-form-icon">
+                            <i class='bx bxl-facebook-circle'></i>
+                            <i class='bx bxl-instagram-alt'></i>
+                            <i class='bx bxs-envelope'></i>
+                            <i class='bx bxl-twitter'></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="support">
+                    <div class="contain-content">
+                        <div class="content-support">
+                            <div id="list-slider-sp" class="list-icon-support">
+                                <div class="item-icon"><i class='bx bxs-phone-call'></i></div>
+                                <div class="item-icon"><i class='bx bxl-messenger'></i></div>
+                                <div class="item-icon"><span>Zalo</span></div>
+                                <div class="item-icon"><i class='bx bx-envelope'></i></div>
+                            </div>
+
+                            <div class="close-support none-open"><i class='bx bx-x'></i></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="open-support none-open">
+                    <div class="list-open-sp">
+                        <ul>
+                            <li>
+                                <div style="background-color:#567AFF" class="icon-open mess">
+                                    <i class='bx bxl-messenger'></i>
+                                </div>
+                                <span class="chat-sp">Messenger</span>
+                            </li>
+                            <li>
+                                <div style="background-color:#1EBEA5" class="icon-open zalo">
+                                    <span>Zalo</span>
+                                </div>
+                                <span style="padding-top: 3px;" class="chat-sp">Zalo chat</span>
+                            </li>
+                            <li>
+                                <div style="background-color:#FF643A" class="icon-open email">
+                                    <i class='bx bx-envelope'></i>
+                                </div>
+                                <span class="chat-sp">Email</span>
+                            </li>
+                            <li>
+                                <div style="background-color:#4EB625" class="icon-open phone">
+                                    <i class='bx bxs-phone-call'></i>
+                                </div>
+                                <span class="chat-sp">Gọi 0362931719</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="down-sp">
+                        <i class='bx bx-caret-left'></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="content-">
+            <p> © Bản quyền thuộc về Doãn Thanh Tuấn - Phone: 036.293.1719 - Email: watchshop@gmail.com</p>
+        </div>
+    </div>
+        <script src="./public/scripts/main.js"></script>
+        <script src="./public/scripts/app.js"></script>
+        <script>
+            let userid = checkStatusLogin();
+            showPay(userid);
+            setTimeout(function () {
+                const sumPriceInputs = document.querySelectorAll('input[name="price-a[]"]');
+                // Tính tổng tiền
+                let totalPrice = 0;
+                for (let i = 0; i < sumPriceInputs.length; i++) {
+                    const price = parseFloat(sumPriceInputs[i].value);
+                    totalPrice += price;
+                }
+                document.querySelector('input[name="sum_price"]').value = totalPrice;
+                let totals = document.querySelectorAll('.total-price-check');
+
+                // Chuyển tổng tiền về dạng chuỗi tiền tệ
+                const formattedTotalPrice = totalPrice.toLocaleString('vi-VN', {
+                    style: 'currency',
+                    currency: 'VND',
+                });
+                // Hiển thị tổng tiền
+                totals.forEach(item => {
+                    item.innerText = formattedTotalPrice;
+                })
+            }, 1000);
+
+            displaycheckTotalCart(userid);
+
+            startAddOrder(userid);
+        </script>
+</body>
+
+
+</html>

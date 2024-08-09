@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Admin Manager</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="title-aside">
+                <h2>M-Watch Store</h2>
+            </div>
+            <div class="content-aside">
+                <div class="menu-aside">
+                    <ul class="menu">
+                        <li class="li-menu"><a href="index.html">Dashboard</a></li>
+                        <li class="li-menu"><a href="user-manager.html">User Manager</a></li>
+                        <li class="li-menu"><a href="category-manager.html">Category Manager</a></li>
+                        <li class="li-menu"><a href="product-manager.html">Product Manager</a></li>
+                        <li class="li-menu"><a href="order-manager.html">The Order Manager</a></li>
+                        <li class="li-menu"><a href="comment-manager.html">Comment Manager</a></li>
+                    </ul>
+                    <ul>
+                        <li class="li-menu">Setting</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-aside">
+                <div class="date-a">
+                    <span id="timeDisplay"></span>
+                </div>
+            </div>
+        </aside>
+        <article>
+            <nav class="navbar navbar-light bg-light">
+                <div class="go-home">
+                    <h5><a href="../index.html">Home Page</a></h5>
+                </div>
+
+                <div class="account-admin">
+                    <div class="vietnamese">
+                        <div class="img-logo">
+                            <img src="../public/image/vietnam.png" alt="">
+                        </div>
+                        <div class="name">
+                            Vietnamese <i class='bx bx-chevron-down'></i>
+                        </div>
+                    </div>
+                    <span class="navbar-brand"><i class='bx bxs-bell-ring'></i></span>
+                    <div class="content-admin">
+                        <ul class="login-admin">
+                            <li id="login-logout" class="li-admin" style="font-size: 1.1rem;">
+                                <!-- <ul class="small-li none-li">
+                                    <li><a href="index.php?route=logout">Log-Out</a></li>
+                                </ul> -->
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </nav>
+
+            <div class="content-container">
+
+                <div class="dashboard">
+                    <div class="title-dashboard">
+                        <h1>Tổng quan về website</h1>
+                    </div>
+                    <div class="statistical">
+                        <div class="data">
+                            <div class="content-data">
+                                <div class="first-data">
+                                    <div class="quantity-data">
+                                        <h5><a href="user-manager.html" class="countUser"></a></h5>
+                                    </div>
+                                    <div class="infor">
+                                        <span>Khách hàng</span>
+                                    </div>
+                                </div>
+                                <div class="second-data">
+                                    <a href="user-manager.html"><i class='bx bxs-user'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="content-data">
+                                <div class="first-data">
+                                    <div class="quantity-data">
+                                        <h5><a href="product-manager.html" class="countProducts"></a></h5>
+
+                                    </div>
+                                    <div class="infor">
+                                        <span>Sản phẩm</span>
+                                    </div>
+                                </div>
+                                <div class="second-data">
+                                    <a href="product-manager.html"><i
+                                            class='bx bxs-bar-chart-alt-2'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="content-data">
+                                <div class="first-data">
+                                    <div class="quantity-data">
+                                        <h5 class="countViews"></h5>
+
+                                    </div>
+                                    <div class="infor">
+                                        <span>Lượt xem</span>
+                                    </div>
+                                </div>
+                                <div class="second-data">
+                                    <i class='bx bxs-low-vision'></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="content-data">
+                                <div class="first-data">
+                                    <div class="quantity-data">
+                                        <h5><a href="order-manager.html" class="countOrders"></a></h5>
+
+                                    </div>
+                                    <div class="infor">
+                                        <span>Đơn hàng</span>
+                                    </div>
+                                </div>
+                                <div class="second-data">
+                                    <a href="order-manager.html">
+                                        <i class='bx bxs-file-export'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="canvas-container">
+                        <div class="first-canvas">
+                            <div class="canvas-width">
+                                <h4>Thống kê giá sản phẩm theo danh mục</h4>
+                                <canvas class="chair-width" id="canvas-top" width="200" height="130"></canvas>
+                            </div>
+
+                            <div class="canvas-circle">
+                                <h4>Thống kê đơn hàng</h4>
+                                <canvas class="chair-width" id="canvas-circle" width="200" height="100"></canvas>
+                            </div>
+                        </div>
+                        <div class="first-canvas">
+
+                            <div class="canvas-width width-a">
+                                <h4>Đơn hàng mới nhất</h4>
+                                <div class="content-canvas">
+                                    <table class="table table-striped table-light">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Mã Đơn</th>
+                                                <th scope="col">Tổng Tiền</th>
+                                                <th scope="col">Ngày Đặt</th>
+                                                <th scope="col">Trạng Thái</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">001</th>
+                                                <td>20000</td>
+                                                <td>24-04-2024</td>
+                                                <td>Chờ xử lý</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">001</th>
+                                                <td>20000</td>
+                                                <td>24-04-2024</td>
+                                                <td>Chờ xử lý</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">001</th>
+                                                <td>20000</td>
+                                                <td>24-04-2024</td>
+                                                <td>Chờ xử lý</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="canvas-circle width-b">
+                                <h4>Top 5 sản phẩm lượt xem cao nhất</h4>
+                                <canvas class="chair-width" id="canvas" width="200" height="180"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-dashboard">
+                        <div class="content-first">
+                            <div class="title-content">
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+    </div>
+</body>
+<script src="./public/scripts/main.js"></script>
+<script src="./public/scripts/app.js"></script>
+<script>
+    checkStatusLogin();
+    countUsers();
+    countProducts();
+    countOrders();
+    countViewProduct();
+    
+    const ctx_circle = document.getElementById('canvas-circle');
+    //Biểu đồ xem thông tin đơn hàng
+    chartOrders().then(orderCounts => {
+            new Chart(ctx_circle, {
+            type: 'pie',
+            data: {
+                labels: ['Chờ xử lý', 'Đã xác nhận', 'Đang vận chuyển', 'Đã giao', 'Đã hủy đơn'],
+                datasets: [{
+                label: 'Tổng đơn: ',
+                data: orderCounts,
+                borderWidth: 1,
+                backgroundColor: ['rgba(255, 0, 0, 0.7)', 'rgba(0, 0, 255, 0.7)', 'rgba(255, 255, 0, 0.7)', 'rgba(0, 128, 0, 0.7)', 'rgba(128, 0, 128, 0.7)']
+                }]
+            },
+            options: {
+                scales: {
+                y: {
+                    beginAtZero: true
+                }
+                }
+            }
+            });
+    });
+
+    //Biểu đồ so sánh giá sản phẩm theo danh mục
+    chartPriceProductByCategory().then(data => {
+        const ctx_top = document.getElementById('canvas-top');
+
+        new Chart(ctx_top, {
+        type: 'bar',
+        data: {
+            labels: data.flatMap(category => [
+            `Max Price ${category.name}`,
+            `Min Price ${category.name}`,
+            `Avg Price ${category.name}`
+            ]),
+            datasets: [{
+            label: '',
+            data: data.flatMap(category => [category.maxPrice, category.minPrice, category.avgPrice]),
+            borderWidth: 1,
+            backgroundColor: ['rgba(255, 0, 0, 0.6)', 'rgba(0, 0, 255, 0.6)', 'rgba(255, 255, 0, 0.6)']
+            }]
+        },
+        options: {
+            scales: {
+            y: {
+                beginAtZero: true
+            }
+            }
+        }
+        });
+    });
+    
+    //Biểu đồ thống kê sản phẩm hot theo lượt xem
+    const ctx = document.getElementById('canvas');
+    chartViewProduct().then(chartData => {
+    // Tạo mảng chứa tên sản phẩm và lượt xem
+    const labels = chartData.map(product => product.name);
+    const viewData = chartData.map(product => product.view);
+
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+        labels: labels,
+        datasets: [{
+            label: 'Lượt xem sản phẩm',
+            data: viewData,
+            borderWidth: 1,
+            backgroundColor: [
+                'rgba(165, 42, 42, 0.8)',
+                'rgba(0, 255, 255, 0.8)',
+                'rgba(0, 128, 0, 0.8)',
+                'rgba(255, 0, 0, 0.8)',
+                'rgba(255, 255, 0, 0.8)',
+            ]
+        }]
+        },
+        options: {
+        scales: {
+            y: {
+            beginAtZero: true
+            }
+        }
+        }
+    });
+    });
+
+
+</script>
+</html>

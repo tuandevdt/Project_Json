@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Products Manager</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="title-aside">
+                <h2>M-Watch Store</h2>
+            </div>
+            <div class="content-aside">
+                <div class="menu-aside">
+                    <ul class="menu">
+                        <li class="li-menu"><a href="index.html">Dashboard</a></li>
+                        <li class="li-menu"><a href="user-manager.html">User Manager</a></li>
+                        <li class="li-menu"><a href="category-manager.html">Category Manager</a></li>
+                        <li class="li-menu"><a href="product-manager.html">Product Manager</a></li>
+                        <li class="li-menu"><a href="order-manager.html">The Order Manager</a></li>
+                        <li class="li-menu"><a href="comment-manager.html">Comment Manager</a></li>
+                    </ul>
+                    <ul>
+                        <li class="li-menu">Setting</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-aside">
+                <div class="date-a">
+                    <span id="timeDisplay"></span>
+                </div>
+            </div>
+        </aside>
+        <article>
+            <nav class="navbar navbar-light bg-light">
+                <div class="go-home">
+                    <h5><a href="../index.html">Home Page</a></h5>
+                </div>
+
+                <div class="account-admin">
+                    <div class="vietnamese">
+                        <div class="img-logo">
+                            <img src="../public/image/vietnam.png" alt="">
+                        </div>
+                        <div class="name">
+                            Vietnamese <i class='bx bx-chevron-down'></i>
+                        </div>
+                    </div>
+                    <span class="navbar-brand"><i class='bx bxs-bell-ring'></i></span>
+                    <div class="content-admin">
+                        <ul class="login-admin">
+                            <li id="login-logout" class="li-admin" style="font-size: 1.1rem;">
+                                <!-- <ul class="small-li none-li">
+                                    <li><a href="index.php?route=logout">Log-Out</a></li>
+                                </ul> -->
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </nav>
+            <div class="content-container">
+
+                <div class="products">
+                    <h1>Quản lý sản phẩm</h1>
+                    <div class="first-search">
+                        <span class="create-new">Thêm sản phẩm mới</span>
+                        <a href="product-manager.html">
+                            Quay lại
+                        </a>
+
+                        <form class="form-search" action="" method="POST">
+                            <input type="text" name="search" placeholder="Enter Products Name">
+                            <button class="btna" name="btnSearch">Search</button>
+                        </form>
+                    </div>
+
+                    <table class="table table-striped table-light">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Productname</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Category ID</th>
+                                <th scope="col" colspan="2" style="text-align: center">More</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="list-products">
+
+                        </tbody>
+                        <div class="form-edit form-delete none-active">
+                            <!-- <form action="index.php?route=handle-delete-product" method="POST"> -->
+                            <div class="form-group">
+                                <span>Xác nhận xóa?</span>
+                                <input id="id-update" type="hidden" name="id-xoa" value="">
+                                <div class="confirm">
+                                    <button id="confirm-delete-product" type="submit" name="submit"
+                                        value="yes">Xóa</button>
+                                    <div class="none" value="no">Hủy</div>
+                                </div>
+                            </div>
+                            <!-- </form> -->
+                        </div>
+                    </table>
+                </div>
+
+                <div class="form-create-product none-active">
+                    <div class="btn-close"><i class='bx bx-x'></i></div>
+                    <h2>Create Product</h2>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Product Name</label>
+                        <input type="text" name="product-name" class="form-control" id="name"
+                            aria-describedby="emailHelp" placeholder="Enter Product Name">
+                        <small id="smallname" class="error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Image</label>
+                        <input class="upfile form-control" type="text" id="image" name="image"
+                            placeholder="Enter Image URL">
+                        <small id="smallimage" class="error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Price</label>
+                        <input type="text" name="price" class="form-control" id="price" aria-describedby="emailHelp"
+                            placeholder="Enter Price">
+                        <small id="smallprice" class="error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Description</label>
+                        <input type="text" name="description" class="form-control" id="description"
+                            aria-describedby="emailHelp" placeholder="Enter Description">
+                        <small id="smalldescription" class="error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Category Name</label>
+                        <select id="list-categories" class="custom-select" name="categoryid">
+                        </select>
+                    </div>
+                    <button id="create" type="submit" name="submit" class="btn btn-primary">Create</button>
+                </div>
+                <div class="form-update-product none-active">
+                    <div class="btn-close-update"><i class='bx bx-x'></i></div>
+                    <h2>Update Product</h2>
+                    <input class="id-product-update" name="id-update-product" type="hidden" value="">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Product Name</label>
+                        <input type="text" name="name-update" value="" class="form-control" id="name"
+                            aria-describedby="emailHelp" placeholder="Enter Product Name">
+                        <small id="smallname" class="error"></small>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Image</label>
+                        <input class="upfile form-control" value="" type="text" id="image" name="image-update"
+                            placeholder="Enter Image URL">
+                        <small id="smallimage" class="error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Price</label>
+                        <input type="text" name="price-update" value="" class="form-control" id="price"
+                            aria-describedby="emailHelp" placeholder="Enter Price">
+                        <small id="smallprice" class="error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Description</label>
+                        <input type="text" name="description-update" value="" class="form-control" id="description"
+                            aria-describedby="emailHelp" placeholder="Enter Description">
+                        <small id="smalldescription" class="error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Category Name</label>
+                        <select id="list-categories-update" class="custom-select" name="categoryid-update">
+                        </select>
+                    </div>
+                    <button id="update" type="submit" name="submit" class="btn btn-primary">Update</button>
+                </div>
+
+            </div>
+        </article>
+
+    </div>
+</body>
+<script src="./public/scripts/app.js"></script>
+<script src="./public/scripts/main.js"></script>
+
+</html>
+<script>
+    clickOpenFormCreateProduct();
+    startCreateCategories();
+    startProducts();
+    checkStatusLogin();
+
+    window.onload = function () {
+        setTimeout(function () {
+            product_manager();
+            getIdProductWhenUpdate((idproduct) => {
+                document.querySelector('.id-product-update').value = idproduct;
+                startUpdateCategories()
+                updateProduct(idproduct);
+            });
+            document.getElementById('confirm-delete-product').addEventListener('click', () => {
+                let productId = document.getElementById('id-update').value;
+                handleDeleteProduct(productId);
+                // window.location.href = 'product-manager.html';
+            });
+        }, 1000)
+    }
+    createProduct();
+
+
+</script>

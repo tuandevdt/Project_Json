@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./public/style/style.css">
+    <title>Detail</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="first-header">
+                    <div class="address-header">
+                        <i class='bx bxs-home-smile'></i>
+                        <span>Shop: 65 Phạm Như Xương, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng</span>
+                    </div>
+                    <div class="contact-header">
+                        <div class="admin">
+                            <a id="link-admin" class="admin" href="./admin/index.html">Admin Manager</a>
+                        </div>
+                        <div class="first-contact">
+                            <i class='bx bxs-phone-call'></i>
+                            <span>Hotline: 036.293.1719</span>
+                        </div>
+                        <div class="second-contact">
+                            <i class='bx bxs-user'></i>
+                            <span class="login login-header">
+                                <ul>
+                                    <li id="login-logout" class="">
+                                    </li>
+                                </ul>
+                            </span>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="second-hd-contai">
+                    <div class="second-header">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="index.html">TRANG CHỦ</a></li>
+                                <li><a href="introduce.html">GIỚI THIỆU</a></li>
+                                <li><a href="products.html">SẢN PHẨM</a></li>
+                                <li><a href="news.html">TIN TỨC</a></li>
+                                <li><a href="contact.html">LIÊN HỆ</a></li>
+                            </ul>
+                        </div>
+                        <div class="img-header">
+                            <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/logomwatch02.png" alt="">
+                        </div>
+                        <div class="search-header">
+                            <div class="search">
+                                <form action="index.php?route=search-product" method="POST">
+                                    <input type="text" name="product-insearch" placeholder="Tìm kiếm">
+                                    <button type="submit" name="search-product"><i class='bx bx-search'></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="cart-header">
+                            <div class="cart">
+                                <a class="a-cart" href="cart.html">
+                                    <span>GIỎ HÀNG</span>
+                                    <i class='bx bxs-cart-alt'></i>
+                                    <strong class="total-cart" id="total-cart"></strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-introduce">
+            <article>
+                <div class="img-title-introduce">
+                    <img src="https://wallpapercave.com/wp/wp4112655.jpg" alt="">
+                </div>
+
+                <div class="content-detail-contai">
+                    <div id="detail-product" class="first-detail-content">
+                        <input id="userid" type="hidden" name="userid" value="">
+
+                    </div>
+                    <div class="check-tick-content">
+                        <div class="check-small">
+                            <i class='bx bxs-check-shield one'></i>
+                            <span>100% HÀNG CHÍNH HÀNG</span>
+                        </div>
+                        <div class="check-small">
+                            <i class='bx bxs-truck two'></i>
+                            <span>MIỄN PHÍ VẬN CHUYỂN</span>
+                        </div>
+                        <div class="check-small">
+                            <i class='bx bxs-badge-check three'></i>
+                            <span>BẢO HÀNH 5 NĂM</span>
+                        </div>
+                        <div class="check-small">
+                            <i class='bx bx-transfer-alt four'></i>
+                            <span>ĐỔI HÀNG TRONG 7 NGÀY</span>
+                        </div>
+                    </div>
+                    <div class="title-detail-content">
+                        <h2>Thông tin chi tiết</h2>
+                    </div>
+                    <div class="infor-detail">
+                        <div class="img-inf">
+                            <img src="https://www.casio.com/content/dam/casio/global/common/selling-point/timepieces/59_made_in_japan.png"
+                                alt="">
+                            <div class="name-inf">
+                                Made in Japan
+                            </div>
+                        </div>
+                        <div class="img-inf">
+                            <img src="https://www.casio.com/content/dam/casio/global/common/selling-point/timepieces/62_shock.png"
+                                alt="">
+                            <div class="name-inf">
+                                Shock resistant
+                            </div>
+                        </div>
+                        <div class="img-inf">
+                            <img src="https://www.casio.com/content/dam/casio/global/common/selling-point/timepieces/04_20bar.png"
+                                alt="">
+                            <div class="name-inf">
+                                20 bar water resistant
+                            </div>
+                        </div>
+                        <div class="img-inf">
+                            <img src="https://www.casio.com/content/dam/casio/global/common/selling-point/timepieces/23_in_time.png"
+                                alt="">
+                            <div class="name-inf">
+                                Keeps yourself in time
+                            </div>
+                        </div>
+                        <div class="img-inf">
+                            <img src="https://www.casio.com/content/dam/casio/global/common/selling-point/timepieces/24_solar.png"
+                                alt="">
+                            <div class="name-inf">
+                                Stable solar power
+                            </div>
+                        </div>
+                        <div class="img-inf">
+                            <img src="https://www.casio.com/content/dam/casio/global/common/selling-point/timepieces/40_polished_metal.png"
+                                alt="">
+                            <div class="name-inf">
+                                Beautiful polished metal
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor-detail-last">
+                        <div class="item-infor-last">
+                            <img src="https://www.casio.com/content/experience-fragments/casio/en/feature/timepiece/watch/g-shock/mr_g/mrg-b2000/features2/master/_jcr_content/root/container/container_1146878886_177773948/container_copy_12820/image.casiocoreimg.jpeg/1642484971124/img2.jpeg"
+                                alt="">
+                            <h6>Clad Guard Structure for durability and operability</h6>
+                            <span>The Clad Guard Structure builds shock resistance into the crown and buttons, ensuring
+                                toughness and ease of operation while reducing the case size. αGEL® inserted into the
+                                head cover of the crown helps to absorb shocks.</span>
+                            <span class="last-span">*αGEL is a registered trademark of Taica Corporation.</span>
+                        </div>
+                        <div class="item-infor-last">
+                            <img src="https://www.casio.com/content/experience-fragments/casio/en/feature/timepiece/watch/g-shock/mr_g/mrg-b2000/features2/master/_jcr_content/root/container/container_1146878886_309646725/container_copy/image.casiocoreimg.jpeg/1642484979069/img3.jpeg"
+                                alt="">
+                            <h6>Super Illuminator (high-brightness LED light) for readability in the dark</h6>
+                            <span>*Image shows the MRG-B2000BS-3A.</span>
+                        </div>
+                        <div class="item-infor-last">
+                            <img src="https://www.casio.com/content/experience-fragments/casio/en/feature/timepiece/watch/g-shock/mr_g/mrg-b2000/features2/master/_jcr_content/root/container/container_1146878886_309646725/container_copy_12820/image.casiocoreimg.jpeg/1642484985846/img4.jpeg"
+                                alt="">
+                            <h6>Solar-powered timekeeping module with Bluetooth® and radio control for enhanced accuracy
+                                and reliability</h6>
+                            <span>Features an MR-G dedicated module with gold plating applied to the retainer plate for
+                                the circuit board to reduce electrical resistance.</span>
+                        </div>
+                        <div class="item-infor-last">
+                            <img src="https://www.casio.com/content/experience-fragments/casio/en/feature/timepiece/watch/g-shock/mr_g/mrg-b2000/features2/master/_jcr_content/root/container/container_1146878886/container_copy/image.casiocoreimg.jpeg/1642485165619/img5.jpeg"
+                                alt="">
+                            <h6>Scratch-resistant, highly transparent sapphire crystal with an anti-reflective coating
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="download-app">
+                        <div class="first-app">
+                            <div class="img-app">
+                                <img src="https://www.casio.com/content/experience-fragments/casio/en/feature/timepiece/watch/application/application/master/_jcr_content/root/container_1424700279/container_1836272977/container_1978137376/container/container/image.casiocoreimg.png/1669773433654/ico-casio-watches.png"
+                                    alt="">
+                            </div>
+                            <div class="content-app">
+                                <b>Multiple functions, all at your fingertips</b>
+                                <h4>CASIO WATCHES</h4>
+                                <span>(Smartphone app)</span>
+                            </div>
+                        </div>
+                        <div class="second-app">
+                            <div class="img-second-app">
+                                <a href=""><img
+                                        src="https://www.casio.com/content/experience-fragments/casio/en/feature/timepiece/watch/application/application/master/_jcr_content/root/container_1424700279/container_1836272977/container_318296927/container_copy/image.casiocoreimg.png/1669779650180/btn-appstore.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="img-second-app">
+                                <a href=""><img
+                                        src="https://www.casio.com/content/experience-fragments/casio/en/feature/timepiece/watch/application/application/master/_jcr_content/root/container_1424700279/container_1836272977/container_318296927/container_copy_copy/image.casiocoreimg.png/1669779667729/btn-googleplay.png"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor-last">
+                        <h3>SPECIFICATIONS</h3>
+                        <div class="content-infor-last">
+                            <div class="first-inf-last">
+                                <ul>
+                                    <li><b>Shock-resistant structure</b></li>
+                                    <li><b>ISO 764-compliant magnetic resistance</b></li>
+                                    <li><b>20-bar water resistance</b></li>
+                                    <li><b>Tough Solar</b> (Solar powered)</li>
+                                    <li><b>Smartphone Link</b> (automatic connection)</li>
+                                    <li><b>Radio-controlled</b> (Multi Band 6)</li>
+                                    <li><b>Auto hand home position correction</b></li>
+                                </ul>
+                            </div>
+                            <div class="first-inf-last">
+                                <ul>
+                                    <li><b>Dual time</b></li>
+                                    <li><b>Stopwatch</b></li>
+                                    <li><b>Countdown timer</b></li>
+                                    <li><b>Alarm</b></li>
+                                    <li><b>LED light</b> (Super Illuminator)</li>
+                                    <li><b>Date display</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="last-inf">
+                            <b>Note: Bluetooth® is a registered trademark or trademark of Bluetooth SIG, Inc.</b>
+                        </div>
+                    </div>
+                    <div class="comment-product">
+                        <div class="title-comment">
+                            <h3>Đánh giá, bình luận về đồng hồ</h3>
+                        </div>
+
+
+                        <div class="write-your-comment">
+                            <form action="" method="POST">
+                                <textarea rows="10" cols="100" name="comment"
+                                    placeholder="Viết bình luận của bạn ở đây..."></textarea>
+                                <input id="id-product-comment" type="hidden" name="productid" value="">
+                                <button class="btn-comment" id="send-comment" name="submit" type="submit" value="send-cmt">Gửi</button>
+                            </form>
+                        </div>
+
+                        <div class="list-comments">
+                            <!-- Phần Popup -->
+                            <div id="editCommentPopup" style="display: none;">
+                                <form action="" method="POST">
+                                    <input type="text" name="editedCommentText" id="editedCommentText">
+                                    <div class="btn-edit">
+                                        <div class="close-edit aa">Trở lại</div>
+                                        <button class="aa" id="btn-update-comment" type="submit" name="submit">Lưu</button>
+                                    </div>
+                                    <input type="hidden" name="commentID" id="commentID" value="">
+                                </form>
+                            </div>
+                            <div id="confirmDeleteCmt" class="form-confirm-delete-cmt" style="display: none;">
+                                <div class="form-delete">
+                                    <h1>Xác nhận xóa</h1>
+                                    <div class="btn-confirm">
+                                        <button class="delete-cmt-now">Xóa</button>
+                                        <button class="cancel-delete">Hủy</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="list-comments" class="content-cmts">
+                                
+                            </div>
+                        </div>
+                        <!-- <span class="sum-comment">
+                            Bình luận, đánh giá về sản phẩm
+                        </span> -->
+                    </div>
+
+                </div>
+
+
+            </article>
+        </main>
+
+        <footer>
+            <div class="footer">
+
+
+                <div class="footer-item">
+
+                    <div class="footer-image">
+                        <div class="footer-logo">
+                            <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/logomwatch02.png" alt="">
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bx-street-view'></i>
+                            <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bx-phone-call'></i>
+                            <p>076 922 0162</p>
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bx-envelope'></i>
+                            <p>demonhunterg@gmail.com
+                            </p>
+                        </div>
+
+                        <div class="footer-image-item">
+                            <i class='bx bxs-hand'></i>
+                            <p>
+                                mon@mona.media
+                        </div>
+
+
+                    </div>
+
+                    <div class="footer-content">
+                        <h2>MENU</h2>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Trang chủ</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>GiớI thiệu</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Tin tức</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Liên hệ</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Kiểm tra đơn hàng</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Đăng ký Affilicate</p>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-content">
+                        <h2>SẢN PHẨM</h2>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Baby-G</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Edifice</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>G-Shock</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>G-Steel</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Gravity Master</p>
+                        </div>
+
+                        <div class="footer-content-item">
+                            <i class='bx bxs-right-arrow'></i>
+                            <p>Mudmaster</p>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-form">
+                        <h2>ĐĂNG KÝ</h2>
+                        <span>Đăng ký để nhận được được thông tin mới nhất từ chúng tôi.</span>
+
+
+
+
+                        <div class="footer-form-ip">
+
+                            <div class="input-fieldd">
+                                <i class='bx bx-send'></i>
+                                <input type="text" placeholder="Email">
+                            </div>
+                        </div>
+                        <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
+
+                        <div class="footer-form-icon">
+                            <i class='bx bxl-facebook-circle'></i>
+                            <i class='bx bxl-instagram-alt'></i>
+                            <i class='bx bxs-envelope'></i>
+                            <i class='bx bxl-twitter'></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="support">
+                    <div class="contain-content">
+                        <div class="content-support">
+                            <div id="list-slider-sp" class="list-icon-support">
+                                <div class="item-icon"><i class='bx bxs-phone-call'></i></div>
+                                <div class="item-icon"><i class='bx bxl-messenger'></i></div>
+                                <div class="item-icon"><span>Zalo</span></div>
+                                <div class="item-icon"><i class='bx bx-envelope'></i></div>
+                            </div>
+
+                            <div class="close-support none-open"><i class='bx bx-x'></i></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="open-support none-open">
+                    <div class="list-open-sp">
+                        <ul>
+                            <li>
+                                <div style="background-color:#567AFF" class="icon-open mess">
+                                    <i class='bx bxl-messenger'></i>
+                                </div>
+                                <span class="chat-sp">Messenger</span>
+                            </li>
+                            <li>
+                                <div style="background-color:#1EBEA5" class="icon-open zalo">
+                                    <span>Zalo</span>
+                                </div>
+                                <span style="padding-top: 3px;" class="chat-sp">Zalo chat</span>
+                            </li>
+                            <li>
+                                <div style="background-color:#FF643A" class="icon-open email">
+                                    <i class='bx bx-envelope'></i>
+                                </div>
+                                <span class="chat-sp">Email</span>
+                            </li>
+                            <li>
+                                <div style="background-color:#4EB625" class="icon-open phone">
+                                    <i class='bx bxs-phone-call'></i>
+                                </div>
+                                <span class="chat-sp">Gọi 0362931719</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="down-sp">
+                        <i class='bx bx-caret-left'></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="content-">
+            <p> © Bản quyền thuộc về Doãn Thanh Tuấn - Phone: 036.293.1719 - Email: watchshop@gmail.com</p>
+        </div>
+    </div>
+        <script src="./public/scripts/main.js"></script>
+        <script src="./public/scripts/app.js"></script>
+        <script>
+            let userid = checkStatusLogin();
+            displaycheckTotalCart(userid);
+            let inputUserId = document.getElementById('userid');
+                inputUserId.value = userid;
+            let currentUrl = new URL(window.location.href);
+
+                // Lấy idproduct =  giá trị của data-id từ URL
+            let id = currentUrl.searchParams.get('data-id');
+            showComment(userid, id)
+            document.querySelector('#id-product-comment').value = id;
+            addComment(userid,id);
+            
+
+            startDetail(id, function () {
+                setTimeout(function () {
+                    let btn = document.querySelector('.addcart');
+                    startAddCart(userid);
+                }, 1000);
+                updateViewProduct(id);
+            });
+            // updateViewProduct(id)
+            function showEditComment(id) {
+                document.querySelector('#editCommentPopup').style.display = 'block';
+                document.querySelector('#commentID').value = id;
+                document.querySelector('.close-edit').addEventListener('click', () => {
+                    document.querySelector('#editCommentPopup').style.display = 'none';
+                })
+                //INNER VALUE
+                getCommentById(id);
+                handleUpdateComment();   
+            }
+            function deleteComment(id) {
+                document.querySelector('#confirmDeleteCmt').style.display = 'flex';
+                document.querySelector('.cancel-delete').addEventListener('click', () => {
+                    document.querySelector('#confirmDeleteCmt').style.display = 'none';
+                })
+                handleDeleteComment(id);
+            }
+                
+        </script>
+</body>
+
+
+</html>

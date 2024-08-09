@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Category Manager</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="title-aside">
+                <h2>M-Watch Store</h2>
+            </div>
+            <div class="content-aside">
+                <div class="menu-aside">
+                    <ul class="menu">
+                        <li class="li-menu"><a href="index.html">Dashboard</a></li>
+                        <li class="li-menu"><a href="user-manager.html">User Manager</a></li>
+                        <li class="li-menu"><a href="category-manager.html">Category Manager</a></li>
+                        <li class="li-menu"><a href="product-manager.html">Product Manager</a></li>
+                        <li class="li-menu"><a href="order-manager.html">The Order Manager</a></li>
+                        <li class="li-menu"><a href="comment-manager.html">Comment Manager</a></li>
+                    </ul>
+                    <ul>
+                        <li class="li-menu">Setting</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-aside">
+                <div class="date-a">
+                    <span id="timeDisplay"></span>
+                </div>
+            </div>
+        </aside>
+        <article>
+            <nav class="navbar navbar-light bg-light">
+                <div class="go-home">
+                    <h5><a href="../index.html">Home Page</a></h5>
+                </div>
+
+                <div class="account-admin">
+                    <div class="vietnamese">
+                        <div class="img-logo">
+                            <img src="../public/image/vietnam.png" alt="">
+                        </div>
+                        <div class="name">
+                            Vietnamese <i class='bx bx-chevron-down'></i>
+                        </div>
+                    </div>
+                    <span class="navbar-brand"><i class='bx bxs-bell-ring'></i></span>
+                    <div class="content-admin">
+                        <ul class="login-admin">
+                            <li id="login-logout" class="li-admin" style="font-size: 1.1rem;">
+                                <!-- <ul class="small-li none-li">
+                                    <li><a href="index.php?route=logout">Log-Out</a></li>
+                                </ul> -->
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </nav>
+            <div class="content-container">
+
+                <div class="categories">
+                    <h1>Quản lý danh mục</h1>
+                    <div class="first-search">
+                        <span class="create-new">Thêm danh mục mới</span>
+                    </div>
+
+
+                    <table class="table table-striped table-light">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Category Name</th>
+                                <th scope="col">Create Date</th>
+                                <th scope="col" class="th" colspan="2" style="text-align: center;">More</th>
+                            </tr>
+                        </thead>
+                        <tbody id="list-categories">
+
+                        </tbody>
+                        <div class="form-edit form-delete none-active">
+                            <form action="" method="POST">
+                                <div class="form-group">
+                                    <span>Xác nhận xóa?</span>
+                                    <input id="id-update" type="hidden" name="id-xoa" value="">
+                                    <div class="confirm">
+                                        <button id="confirm-delete-product" type="submit" name="submit"
+                                            value="yes">Xóa</button>
+                                        <div class="none">Hủy</div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </table>
+
+                    <div class="form-create-product none-active">
+                        <div class="btn-close"><i class='bx bx-x'></i></div>
+                        <h2>Create Category</h2>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Category Name</label>
+                            <input type="text" name="category-name" class="form-control" id="name"
+                                aria-describedby="emailHelp" placeholder="Enter Product Name">
+                            <small id="smallname" class="error"></small>
+                        </div>
+                        <button id="create" type="submit" name="submit" class="btn btn-primary">Create</button>
+                    </div>
+
+                    <div class="form-update-product none-active">
+                        <div class="btn-close-update"><i class='bx bx-x'></i></div>
+                        <h2>Update Product</h2>
+                        <input class="id-product-update" name="id-update-product" type="hidden" value="">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Category Name</label>
+                            <input type="text" name="name-update" value="" class="form-control" id="name-update"
+                                aria-describedby="emailHelp" placeholder="Enter Product Name">
+                            <small id="smallname" class="error"></small>
+                        </div>
+                        <button id="update-category" type="submit" name="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+    </div>
+</body>
+<script src="./public/scripts/app.js"></script>
+<script src="./public/scripts/main.js"></script>
+
+</html>
+<script>
+    startCategories();
+    checkStatusLogin();
+
+    clickOpenFormCreateProduct();
+
+    window.onload = function () {
+        setTimeout(function () {
+            category_manager();
+            getIdProductWhenUpdate((idcategory) => {
+                document.querySelector('.id-product-update').value = idcategory;
+                updateCategory(idcategory);
+            });
+            document.getElementById('confirm-delete-product').addEventListener('click', () => {
+                let categoryId = document.getElementById('id-update').value;
+                handleDeleteCategory(categoryId);
+                
+            });
+        }, 1000);
+    }
+
+    createCategory();
+</script>

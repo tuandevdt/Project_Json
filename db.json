@@ -1,0 +1,565 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Tuandev",
+      "email": "doanthanhtuan1998@gmail.com",
+      "password": "Tuandoan@2404",
+      "status": "active",
+      "role": "admin",
+      "date": "2024-07-05"
+    },
+    {
+      "id": "2",
+      "name": "Hoangdb",
+      "email": "tuandoan2404@gmail.com",
+      "password": "tuandoan123",
+      "status": "active",
+      "role": "user",
+      "date": "2024-07-14"
+    },
+    {
+      "id": "3",
+      "name": "Van Tien",
+      "email": "vantien@gmail.com",
+      "password": "tuandoan123",
+      "status": "active",
+      "role": "user",
+      "date": "2024-07-16"
+    },
+    {
+      "id": "4",
+      "name": "tuandoan123",
+      "email": "doanthanhtuan1998a@gmail.com",
+      "password": "Tuandoan123",
+      "status": "active",
+      "role": "user",
+      "date": "19:34:21 26/7/2024"
+    },
+    {
+      "id": "5",
+      "name": "tuandoan",
+      "email": "doanthanhtuan15081998a@gmail.com",
+      "password": "Tuandoan123",
+      "status": "active",
+      "role": "user",
+      "date": "07:24:21 2/8/2024"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "ROYAL OAK CONCEPT",
+      "isdelete": false,
+      "date": "2024-07-05"
+    },
+    {
+      "id": "2",
+      "name": "ROYAL OAK OFFSHORE",
+      "isdelete": false,
+      "date": "2024-07-05"
+    },
+    {
+      "id": "3",
+      "name": "ROYAL OAK MASTER",
+      "isdelete": false,
+      "date": "2024-07-05"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "ROYAL OAK CONCEPT Supersonnerie",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009784.00/importer/standup.png.transform.approductmain.png",
+      "price": 28500000,
+      "view": 7,
+      "description": "The titanium case of the new 44mm Royal Oak Concept Flying Tourbillon GMT iteration is topped off with a green ceramic bezel – a first in the collection. The black architectural movement features green CVD-coloured inserts matching with the bezel’s hue. Sandblasted titanium case and green ceramic bezel, glareproofed sapphire crystal and caseback, green ceramic pushpiece and screw-locked crown, sandblasted titanium pushpiece guards.",
+      "categoryid": 1,
+      "date": "14:49:50 3/8/2024"
+    },
+    {
+      "id": "2",
+      "name": "ROYAL OAK CONCEPT Supersonnerie",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010187AA/importer/standup.png.transform.approductmain.png",
+      "price": 29500000,
+      "view": 261,
+      "description": "This one-of-a-kind Royal Oak Concept Flying Tourbillon GMT combines a titanium case and a black ceramic bezel with a burgundy openworked movement matching the strap. Sandblasted titanium case, black ceramic bezel, glareproofed sapphire crystal and caseback, black ceramic pushpiece and screw-locked crown, sandblasted titanium pushpiece guards.",
+      "categoryid": 1,
+      "date": "14:49:55 3/8/2024"
+    },
+    {
+      "id": "3",
+      "name": "ROYAL OAK CONCEPT Supersonnerie",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010309AA/importer/standup.png.transform.approductmain.png",
+      "price": 32500000,
+      "view": 5,
+      "description": "This new iteration of the Royal Oak Concept Minute Repeater Supersonnerie marries a titanium case with a black ceramic bezel and a cutting-edge openworked dial highlighted with pink gold tones. Titanium case, black ceramic bezel and crown, glareproofed sapphire crystal, black ceramic and pink gold pushpieces, titanium pushpiece guards.",
+      "categoryid": 1,
+      "date": "13:06:10 3/8/2024"
+    },
+    {
+      "id": "4",
+      "name": "ROYAL OAK CONCEPT GMT Large Date",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009585.00/importer/standup.png.transform.approductmain.png",
+      "price": 35000000,
+      "view": 1,
+      "description": "Combining futuristic looks, ergonomics, high technology and performance, the Royal Oak Concept collection explores new technical horizons with this new titanium model. The intricate split-seconds mechanism has been integrated into the thickness of the oscillating weight, making it visible on the caseback side – a first in the history of selfwinding watches. The watch offers two other practical functions: a GMT day/night indicator and a large date. ",
+      "categoryid": 1,
+      "date": "13:07:25 3/8/2024"
+    },
+    {
+      "id": "5",
+      "name": "ROYAL OAK CONCEPT \"Spider-Man\"",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010326AA/importer/standup.png.transform.approductmain.png",
+      "price": 37800000,
+      "view": 61,
+      "description": "A feat of skeletonization, this second Marvel collaboration pays tribute to Spider-Man, who appears to be suspended from the dial as he passes through the tourbillon mechanism. Titanium case and black ceramic bezel, glareproofed sapphire crystal and caseback, black ceramic screw-locked crown.",
+      "categoryid": 1,
+      "date": "13:08:36 3/8/2024"
+    },
+    {
+      "id": "6",
+      "name": "ROYAL OAK CONCEPT \"Black Suit Spider-Man\"",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010538AA/importer/standup.png.transform.approductmain.png",
+      "price": 38200000,
+      "view": 65,
+      "description": "This finely engraved and luminescent white gold timepiece features the superhero Spider-Man in his black costume that matches the black ceramic bezel. Engraved white gold case and black ceramic bezel, glareproofed sapphire crystal and caseback, black ceramic screw-locked crown.",
+      "categoryid": 1,
+      "date": "13:09:35 3/8/2024"
+    },
+    {
+      "id": "7",
+      "name": "ROYAL OAK CONCEPT Tourbillon",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009864.00/importer/standup.png.transform.approductmain.png",
+      "price": 34580000,
+      "view": 1,
+      "description": "The 18-carat white gold Royal Oak Concept Flying Tourbillon is fully gemset with 468 brilliant-cut sapphires in different shades of blue. 18-carat white gold case set with brilliant-cut graded blue sapphires, bezel set with brilliant-cut blue sapphires, glareproofed sapphire crystal and caseback, crown set with a translucent sapphire cabochon.",
+      "categoryid": 1,
+      "date": "13:10:47 3/8/2024"
+    },
+    {
+      "id": "8",
+      "name": "ROYAL OAK CONCEPT Tourbillon",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009861.00/importer/standup.png.transform.approductmain.png",
+      "price": 35300000,
+      "view": 1,
+      "description": "While the Royal Oak Concept Flying Tourbillon's 18-carat white gold case sparks with brilliant-cut graded blue sapphires, the gold dial and movement components are set with brilliant-cut diamonds. 18-carat white gold case set with brilliant-cut graded blue sapphires, glareproofed sapphire crystal and caseback, crown set with a translucent sapphire cabochon.",
+      "categoryid": 1,
+      "date": "13:12:28 3/8/2024"
+    },
+    {
+      "id": "9",
+      "name": "ROYAL OAK CONCEPT Tourbillon",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR008926.00/importer/standup.png.transform.approductmain.png",
+      "price": 36000000,
+      "view": 0,
+      "description": "The Royal Oak Concept collection's first model for women is the epitome of mechanical jewellery timepieces. The openworked dial reveals the watch's flying tourbillon, while the 18-carat white gold case, dial and inner bezel are set with baguette-cut diamonds. 18-carat white gold case set with baguette-cut diamonds, glareproofed sapphire crystal and caseback, crown set with a translucent sapphire cabochon.",
+      "categoryid": 1,
+      "date": "13:13:23 3/8/2024"
+    },
+    {
+      "id": "10",
+      "name": "ROYAL OAK CONCEPT Tourbillon",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010318AA/importer/standup.png.transform.approductmain.png",
+      "price": 39800000,
+      "view": 1,
+      "description": "The 18-carat white gold Royal Oak Concept Flying Tourbillon is illuminated with 468 brilliant-cut coloured gemstones, meticulously chosen to achieve a unique rainbow effect. 18-carat white gold case and bezel set with brilliant-cut multicoloured gemstones, glareproofed sapphire crystal and caseback, crown set with a translucent sapphire cabochon",
+      "categoryid": 1,
+      "date": "13:14:35 3/8/2024"
+    },
+    {
+      "id": "11",
+      "name": "ROYAL OAK CONCEPT Tourbillon",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009865.00/importer/standup.png.transform.approductmain.png",
+      "price": 39200000,
+      "view": 0,
+      "description": "The 18-carat pink gold Royal Oak Concept Flying Tourbillon is invisibly set with 208 baguette-cut sapphires in varying shades of blue and paired with a matching blue strap. This model will be available in select Audemars Piguet points of sale in 2022. 18-carat pink gold case set with baguette-cut graded blue sapphires, bezel set with baguette-cut blue sapphires, glareproofed sapphire crystal and caseback, crown set with a translucent sapphire cabochon",
+      "categoryid": 1,
+      "date": "13:15:45 3/8/2024"
+    },
+    {
+      "id": "12",
+      "name": "ROYAL OAK CONCEPT “Tamara Ralph”",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010568AA/importer/standup.png.transform.approductmain.png",
+      "price": 41200000,
+      "view": 1,
+      "description": "Designed in collaboration with Tamara Ralph, the limited-edition Royal Oak Concept Flying Tourbillon features an 18-carat pink gold case glittering with Frosted Gold and a multilayered dial in graded shades of brown, bronze and gold. Hammered 18-carat pink gold case, glareproofed sapphire crystal and caseback.",
+      "categoryid": 1,
+      "date": "13:17:14 3/8/2024"
+    },
+    {
+      "id": "13",
+      "name": "ROYAL OAK OFFSHORE Chronograph",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010575AA/importer/standup.png.transform.approductmain.png",
+      "price": 42500000,
+      "view": 0,
+      "description": "The 43mm black ceramic case houses a selfwinding movement incorporating a tourbillon and chronograph, all skilfully brought together, showcasing AP's uncompromising craftsmanship. Ceramic case, bezel, pushpieces and crown, titanium links and pushpiece guards, glareproofed sapphire crystal, screw-locked crown.",
+      "categoryid": 2,
+      "date": "13:19:59 3/8/2024"
+    },
+    {
+      "id": "14",
+      "name": "ROYAL OAK OFFSHORE Chronograph",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010576AA/importer/standup.png.transform.approductmain.png",
+      "price": 43500000,
+      "view": 1,
+      "description": "The black ceramic case sits in concert with pink gold accents while at the heart of the watch sits a selfwinding tourbillon movement, incoporating a chronograph mechanism. Ceramic case, bezel, pushpieces and crown, 18-carat pink gold links and pushpiece guards, glareproofed sapphire crystal, screw-locked crown.",
+      "categoryid": 2,
+      "date": "13:21:31 3/8/2024"
+    },
+    {
+      "id": "15",
+      "name": "ROYAL OAK OFFSHORE Chronograph",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009796.00/importer/standup.png.transform.approductmain.png",
+      "price": 39800000,
+      "view": 0,
+      "description": "Black and green tones highlight the architectural micro-mechanics of this sporty timepiece. Black ceramic case and bezel, glareproofed sapphire crystal and caseback, black ceramic pushpieces and screw-locked crown, titanium pushpiece guards and links.",
+      "categoryid": 2,
+      "date": "13:22:32 3/8/2024"
+    },
+    {
+      "id": "16",
+      "name": "ROYAL OAK OFFSHORE Chronograph",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR011247AA/importer/standup.png.transform.approductmain.png",
+      "price": 40500000,
+      "view": 0,
+      "description": "This black ceramic model pays homage to the Royal Oak Offshore “End of Days” (ref. 25770SN), released in 1999. Black ceramic case and bezel, glareproofed sapphire crystal and caseback, black ceramic pushpieces and screw-locked crown, titanium pushpiece guards, studs and caseback.",
+      "categoryid": 2,
+      "date": "13:23:22 3/8/2024"
+    },
+    {
+      "id": "17",
+      "name": "ROYAL OAK OFFSHORE Chronograph",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010548AA/importer/standup.png.transform.approductmain.png",
+      "price": 39580000,
+      "view": 0,
+      "description": "Housed in a 43mm black ceramic case paired with a blue ceramic bezel, this model repeatedly contrasts black and blue hues to stylish affect. Black ceramic case and blue ceramic bezel, glareproofed sapphire crystal and caseback, blue ceramic pushpieces and screw-locked crown, titanium pushpiece guards and links.",
+      "categoryid": 2,
+      "date": "13:24:30 3/8/2024"
+    },
+    {
+      "id": "18",
+      "name": "ROYAL OAK OFFSHORE Chronograph",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009469.00/importer/standup.png.transform.approductmain.png",
+      "price": 43250000,
+      "view": 0,
+      "description": "Black ceramic and yellow gold provide a refined and powerful contrast for this new model that is further enriched with a \"Méga Tapisserie\" dial. Black ceramic case and bezel, glareproofed sapphire crystal and caseback, black ceramic pushpieces and screw-locked crown, yellow gold pushpiece guards and links.",
+      "categoryid": 2,
+      "date": "13:25:43 3/8/2024"
+    },
+    {
+      "id": "19",
+      "name": "ROYAL OAK OFFSHORE Chronograph",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009461.00/importer/standup.png.transform.approductmain.png",
+      "price": 41800000,
+      "view": 0,
+      "description": "The newly designed 43 mm Royal Oak Offshore, powered by Calibre 4401, takes on grey hues with its titanium case, grey ceramic bezel, refined “Méga Tapisserie” dial and interchangeable rubber strap. Titanium case, glareproofed sapphire crystal and caseback, grey ceramic bezel, pushpieces and screw-locked crown, sandblasted titanium pushpiece guards.",
+      "categoryid": 2,
+      "date": "13:27:21 3/8/2024"
+    },
+    {
+      "id": "20",
+      "name": "ROYAL OAK OFFSHORE Chronograph",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009462.00/importer/standup.png.transform.approductmain.png",
+      "price": 43200000,
+      "view": 0,
+      "description": "Black ceramics meets 18-carat pink gold in this newly designed 43 mm model powered by Calibre 4401. The refined black “Méga Tapisserie” dial and interchangeable rubber strap complete the design. 18-carat pink gold case, glareproofed sapphire crystal and caseback, black ceramic bezel, pushpieces and screw-locked crown, sandblasted 18-carat pink gold pushpiece guards.",
+      "categoryid": 2,
+      "date": "13:59:17 3/8/2024"
+    },
+    {
+      "id": "21",
+      "name": "ROYAL OAK OFFSHORE Music Edition",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009547.00/importer/standup.png.transform.approductmain.png",
+      "price": 45000000,
+      "view": 0,
+      "description": "The aesthetic of this 43 mm black ceramic Royal Oak Offshore Selfwinding limited edition is inspired by music with its dial representing a VU meter and its push-piece guards evoking mixer faders. A black interchangeable rubber strap complements the overall design. Black ceramic case and bezel, glareproofed sapphire crystal and caseback, black ceramic screw-locked crown, titanium crown guards and links.",
+      "categoryid": 2,
+      "date": "14:01:15 3/8/2024"
+    },
+    {
+      "id": "22",
+      "name": "ROYAL OAK OFFSHORE Music Edition",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010072.00/importer/standup.png.transform.approductmain.png",
+      "price": 44500000,
+      "view": 0,
+      "description": "The aesthetic of this 43 mm titanium Royal Oak Offshore Selfwinding limited edition is inspired by music with its dial representing a VU meter and its push-piece guards evoking mixer faders. A blue interchangeable rubber strap complements the overall design. Titanium case, glareproofed sapphire crystal and caseback, screw-locked crown.",
+      "categoryid": 2,
+      "date": "14:02:03 3/8/2024"
+    },
+    {
+      "id": "23",
+      "name": "ROYAL OAK OFFSHORE Chronograph",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009812.00/importer/standup.png.transform.approductmain.png",
+      "price": 43800000,
+      "view": 0,
+      "description": "An array of yellow, green and blue baguette-cut sapphires offer a colourful new interpretation of this iconic model that is combined with a blue \"Lady Tapisserie\" dial and yellow gold case. 18-carat yellow gold case, bezel set with baguette-cut blue and yellow sapphires and tsavorites, glareproofed sapphire crystal, screw-locked crown.",
+      "categoryid": 2,
+      "date": "14:03:12 3/8/2024"
+    },
+    {
+      "id": "24",
+      "name": "ROYAL OAK OFFSHORE Chronograph",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010573AA/importer/standup.png.transform.approductmain.png",
+      "price": 44300000,
+      "view": 0,
+      "description": "Baguette-cut rainbow gemstones provide a sparkling and colourful frame for this Royal Oak Offshore model in pink gold with a new black \"Lady Tapisserie\" dial. 18-carat pink gold case, bezel set with baguette-cut rainbow gemstones, glareproofed sapphire crystal, screw-locked crown.",
+      "categoryid": 2,
+      "date": "14:04:00 3/8/2024"
+    },
+    {
+      "id": "25",
+      "name": "ROYAL OAK MASTER Complication",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009491.00/importer/standup.png.transform.approductmain.png",
+      "price": 39800000,
+      "view": 0,
+      "description": "Combining the 3 categories of horological complications represented by short-time measurement, striking mechanisms and astronomical indications, this model driven by in-house calibre 2885 was hand-crafted by a single master-watchmaker in the Audemars Piguet grande complication workshop. Sapphire dial, white external zone of counters, white gold Royal Oak hands with luminescent coating.",
+      "categoryid": 3,
+      "date": "14:06:45 3/8/2024"
+    },
+    {
+      "id": "26",
+      "name": "ROYAL OAK MASTER Complication",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009127.00/importer/standup.png.transform.approductmain.png",
+      "price": 40500000,
+      "view": 0,
+      "description": "Combining the 3 categories of horological complications represented by short-time measurement, striking mechanisms and astronomical indications, this model driven by in-house calibre 2885 was hand-crafted by a single master-watchmaker in the Audemars Piguet grande complication workshop. Black ceramic case, glareproofed sapphire crystal and caseback, black ceramic pushpieces and crown.",
+      "categoryid": 3,
+      "date": "14:08:36 3/8/2024"
+    },
+    {
+      "id": "27",
+      "name": "ROYAL OAK MASTER Supersonnerie",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010324AA/importer/standup.png.transform.approductmain.png",
+      "price": 35800000,
+      "view": 0,
+      "description": "Drawing on the Manufacture's vast experience of chiming watches, this Royal Oak Minute Repeater Supersonnerie is presented in a black ceramic case and endued with a black \"Grande Tapisserie\" dial. Black ceramic case, glareproofed sapphire crystal, screw-locked crown.",
+      "categoryid": 3,
+      "date": "14:09:42 3/8/2024"
+    },
+    {
+      "id": "28",
+      "name": "ROYAL OAK MASTER Supersonnerie",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010493AA/importer/standup.png.transform.approductmain.png",
+      "price": 37800000,
+      "view": 1,
+      "description": "This special edition Minute Repeater Supersonnerie in titanium and platinum stands out with its unusual smoked burgundy dial that will catch the eye across a crowded room. Titanium case, platinum bezel, glareproofed sapphire crystal, screw-locked crown.",
+      "categoryid": 3,
+      "date": "14:10:54 3/8/2024"
+    },
+    {
+      "id": "29",
+      "name": "ROYAL OAK MASTER Supersonnerie",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009891.00/importer/standup.png.transform.approductmain.png",
+      "price": 41250000,
+      "view": 0,
+      "description": "The Royal Oak Minute Repeater Supersonnerie offers an elegant contrast with its titanium case and bracelet enhanced with a smoked grey “Grande Tapisserie” dial. Titanium case, glareproofed sapphire crystal, screw-locked crown.",
+      "categoryid": 3,
+      "date": "14:11:36 3/8/2024"
+    },
+    {
+      "id": "30",
+      "name": "ROYAL OAK MASTER Openworked ",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010886AA/importer/standup.png.transform.approductmain.png",
+      "price": 44580000,
+      "view": 0,
+      "description": "This 41 mm timepiece is crafted in sand gold, a new 18-carat gold alloy that hovers between white and pink gold and plays with the light. Its multilayered, openworked movement pairs sand-gold-toned and rhodium-toned hues. 18-carat sand gold case, glareproofed sapphire crystal and caseback.",
+      "categoryid": 3,
+      "date": "14:12:46 3/8/2024"
+    },
+    {
+      "id": "31",
+      "name": "ROYAL OAK MASTER Calendar",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010623AA/importer/standup.png.transform.approductmain.png",
+      "price": 43500000,
+      "view": 0,
+      "description": "Housed in a white frosted gold case, this limited edition presents its perpetual calendar indications in a strikingly legible way thanks to a black \"Grande Tapisserie\" dial and blue and white counters. Hammered 18-carat white gold case, glareproofed sapphire crystal and caseback, screw-locked crown.",
+      "categoryid": 3,
+      "date": "14:14:07 3/8/2024"
+    },
+    {
+      "id": "32",
+      "name": "ROYAL OAK MASTER Calendar",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010896AA/importer/standup.png.transform.approductmain.png",
+      "price": 40500000,
+      "view": 0,
+      "description": "Designed in collaboration with John Mayer, this limited edition pairs an 18-carat white gold case and bracelet with the Manufacture’s new shimmering, embossed “Crystal Sky” dial in a dark blue tone. It is also the last to be equipped with the selfwinding perpetual calendar, Calibre 5134. 18-carat white gold case, glareproofed sapphire crystal and caseback.",
+      "categoryid": 3,
+      "date": "14:15:13 3/8/2024"
+    },
+    {
+      "id": "33",
+      "name": "ROYAL OAK MASTER Calendar",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009672.00/importer/standup.png.transform.approductmain.png",
+      "price": 46500000,
+      "view": 0,
+      "description": "Entirely dressed in blue, the new Royal Oak Perpetual Calendar in 41 mm presents for the first time a case and bracelet fully crafted in blue ceramic. The matching blue Grande Tapisserie dial and subdials further bestow the timepiece with an air of starlit sky. Blue ceramic case, glareproofed sapphire crystal and caseback, screw-locked crown.",
+      "categoryid": 3,
+      "date": "14:16:27 3/8/2024"
+    },
+    {
+      "id": "34",
+      "name": "ROYAL OAK MASTER Chronograph",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010743AA/importer/standup.png.transform.approductmain.png",
+      "price": 48500000,
+      "view": 0,
+      "description": "For the first time, the 41 mm Royal Oak Selfwinding Chronograph pairs a yellow gold case and bracelet with a smoked yellow-gold-toned Grande Tapisserie dial for a powerful play of light. 18-carat yellow gold case, glareproofed sapphire crystal and caseback.",
+      "categoryid": 3,
+      "date": "14:17:21 3/8/2024"
+    },
+    {
+      "id": "35",
+      "name": "ROYAL OAK MASTER Selfwinding",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009879.00/importer/standup.png.transform.approductmain.png",
+      "price": 48700000,
+      "view": 0,
+      "description": "White gold, snow-set brilliant-cut diamonds and 13 baguette-cut diamond hour markers enrich the appearance of this 37 mm sports watch, making it appropriate for all occasions. 18-carat white gold case snow-set with brilliant-cut diamonds, crown set with brilliant-cut diamonds, bezel snow-set with brilliant-cut diamonds, glareproofed sapphire crystal and caseback.",
+      "categoryid": 3,
+      "date": "14:20:29 3/8/2024"
+    },
+    {
+      "id": "36",
+      "name": "ROYAL OAK OFFSHORE Openworked",
+      "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010846AA/importer/watch.png.transform.appdpmaintabwide.png",
+      "price": 49850000,
+      "view": 0,
+      "description": "The 18-carat yellow Frosted gold case and bracelet powerfully contrast with the slate grey openworked movement. The rainbow bezel set with multicoloured gemstones adds a play of light. Hammered 18-carat yellow gold case, bezel set with “rainbow” baguette-cut multicoloured gemstones, glareproofed sapphire crystal and caseback, screw-locked crown.",
+      "categoryid": 3,
+      "date": "14:21:41 3/8/2024"
+    }
+  ],
+  "cart": [
+    {
+      "id": "9",
+      "productid": "6",
+      "userid": 2,
+      "quantity": 2
+    },
+    {
+      "id": "11",
+      "productid": "5",
+      "userid": 2,
+      "quantity": 1
+    },
+    {
+      "id": "12",
+      "productid": "5",
+      "userid": 5,
+      "quantity": 1
+    }
+  ],
+  "orders": [
+    {
+      "id": "NU98WGHW",
+      "fullname": "Doãn Thanh Tuấn",
+      "address": "60 Phạm Như Xương, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng",
+      "phone": "0362931719",
+      "total": 79000000,
+      "userid": 5,
+      "status": "Đã giao",
+      "note": "giao sớm ạ",
+      "date": "16:23:19 3/8/2024"
+    },
+    {
+      "id": "UGJLBGSM",
+      "fullname": "Doãn Thanh Tuấn",
+      "address": "60 Phạm Như Xương, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng",
+      "phone": "0362931719",
+      "total": 89900000,
+      "userid": 5,
+      "status": "Đang vận chuyển",
+      "note": "giao sớm ạ",
+      "date": "20:01:54 4/8/2024"
+    },
+    {
+      "id": "JDSO9EOR",
+      "fullname": "Doãn Thanh Tuấn",
+      "address": "60 Phạm Như Xương, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng",
+      "phone": "0362931719",
+      "total": 39800000,
+      "userid": 5,
+      "status": "Đã xác nhận",
+      "note": "",
+      "date": "16:56:15 7/8/2024"
+    },
+    {
+      "id": "J56NYZ88",
+      "fullname": "Doãn Thanh Tuấn",
+      "address": "60 Phạm Như Xương, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng",
+      "phone": "0362931719",
+      "total": 38200000,
+      "userid": 4,
+      "status": "Chờ xử lý",
+      "note": "",
+      "date": "11:26:55 8/8/2024"
+    }
+  ],
+  "order_detail": [
+    {
+      "id": "f2411246-513e-46e5-8f79-5336c22e4496",
+      "orderid": "NU98WGHW",
+      "productid": "12",
+      "quantity": 1
+    },
+    {
+      "id": "2086ba99-11c1-4aca-9153-667dec75e590",
+      "orderid": "NU98WGHW",
+      "productid": "28",
+      "quantity": 1
+    },
+    {
+      "id": "e621501c-1bd8-48e9-a7e6-67a2afe15d74",
+      "orderid": "UGJLBGSM",
+      "productid": "35",
+      "quantity": 1
+    },
+    {
+      "id": "e0beb066-c98c-411c-8eff-b1f8c3c7bafc",
+      "orderid": "UGJLBGSM",
+      "productid": "12",
+      "quantity": 1
+    },
+    {
+      "id": "a1a96e6e-ac89-4a4e-963c-e026aa3fd46e",
+      "orderid": "JDSO9EOR",
+      "productid": "15",
+      "quantity": 1
+    },
+    {
+      "id": "7ee68627-ed73-4795-9a14-cc3eb2dd495b",
+      "orderid": "J56NYZ88",
+      "productid": "6",
+      "quantity": 1
+    }
+  ],
+  "comment": [
+    {
+      "id": "6989",
+      "text": "sản phẩm tốt",
+      "productid": "3",
+      "userid": "5",
+      "date": "17:22:42 7/8/2024"
+    },
+    {
+      "id": "a2d4",
+      "text": "good watch",
+      "productid": "6",
+      "userid": "5",
+      "date": "10:03:24 8/8/2024"
+    },
+    {
+      "id": "f175",
+      "text": "đồng hồ xịn nha, mang đẹp lắm ạ",
+      "productid": "6",
+      "userid": "4",
+      "date": "12:36:22 8/8/2024"
+    },
+    {
+      "id": "c0bf",
+      "text": "màu xanh này đẹp nha, hàng về còn đẹp hơn trong hình, xứng đáng",
+      "productid": "1",
+      "userid": "5",
+      "date": "19:31:27 8/8/2024"
+    }
+  ]
+}

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./public/style/style.css" >
+    <title>Watch Store</title>
+</head>
+<body>
+    <div class="container">
+        <header>  
+            <div class="header">
+                            <div class="first-header">
+                                <div class="address-header">
+                                    <i class='bx bxs-home-smile'></i>
+                                    <span>Shop: 65 Phạm Như Xương, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng</span>
+                                </div>
+                                <div class="contact-header">
+                                    <div class="admin">
+                                        <a id="link-admin" class="admin" href="./admin/index.html">Admin Manager</a>
+                                    </div>
+                                    <div class="first-contact">
+                                        <i class='bx bxs-phone-call'></i>
+                                        <span>Hotline: 036.293.1719</span>
+                                    </div>
+                                    <div class="second-contact">
+                                        <i class='bx bxs-user'></i>
+                                        <span class="login login-header" >
+                                            <ul>
+                                                <li id="login-logout" class="">
+                                                </li>
+                                            </ul>
+                                        </span>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="second-hd-contai">
+                                <div class="second-header">
+                                    <div class="menu">
+                                        <ul>
+                                            <li><a href="">TRANG CHỦ</a></li>
+                                            <li><a href="introduce.html">GIỚI THIỆU</a></li>
+                                            <li><a href="products.html">SẢN PHẨM</a></li>
+                                            <li><a href="news.html">TIN TỨC</a></li>
+                                            <li><a href="contact.html">LIÊN HỆ</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="img-header">
+                                        <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/logomwatch02.png" alt="">
+                                    </div>
+                                    <div class="search-header">
+                                        <div class="search">
+                                            <form action="index.php?route=search-product" method="POST">
+                                                <input type="text" name="product-insearch" placeholder="Tìm kiếm">
+                                                <button type="submit" name="search-product"><i class='bx bx-search'></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="cart-header">
+                                        <div class="cart">
+                                            <a class="a-cart" href="cart.html">
+                                                <span>GIỎ HÀNG</span>
+                                                <i class='bx bxs-cart-alt'></i>
+                                                <strong class="total-cart" id="total-cart"></strong>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        </header>
+
+        <main class="home">
+            <article>
+                            <!-- SLIDER MAIN -->
+                            <div class="slider-contai">
+                                <div id="slider-main" class="slider">       
+                                    <div class="img-slider">
+                                        <img src="https://gshock.casio.com/content/experience-fragments/casio/en/feature/timepiece/watch/g-shock/mt_g/mtg_b2000/features02/us/_jcr_content/root/container_963753939/teaser.casiocoreimg.jpeg/1659473003966/mtg-b2000-tile-img-2-1600x900.jpeg" alt="">
+                                        <div class="bground-slider"></div>
+                                        <div class="content-slider">
+                                            <h1  id="content-sd" >G-Shock VIỆT NAM</h1>
+                                            <span>Chuyên phân phối đồng hồ Casio Mỹ/Nhật chính hãng giá cạnh tranh nhất</span>
+                                            <button><a href="">MUA NGAY</a></button>
+                                        </div>
+                                    </div>
+                                    <div class="img-slider">
+                                        <video preload playsinline muted autoplay loop width="1349px" height="760px">
+                                            <source src="https://www.g-store.vn/wp-content/uploads/2023/07/MUDMASTER-GWG-2000-CASIO-G-SHOCK.mp4">
+                                        </video>
+                                    </div>
+                                    <div class="img-slider">
+                                        <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/banner01.jpg" alt="">
+                                        <div class="bground-slider"></div>
+                                        <div class="content-slider">
+                                            <h1>G-Shock VIỆT NAM</h1>
+                                            <span>Chuyên phân phối đồng hồ Casio Mỹ/Nhật chính hãng giá cạnh tranh nhất</span>
+                                            <button><a href="">MUA NGAY</a></button>
+                                        </div>
+                                        
+                                    </div> 
+                                    <div class="img-slider">
+                                        <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/banner02.jpg" alt="">
+                                        <div class="bground-slider"></div>
+                                        <div class="content-slider">
+                                            <h1>G-Shock VIỆT NAM</h1>
+                                            <span>Chuyên phân phối đồng hồ Casio Mỹ/Nhật chính hãng giá cạnh tranh nhất</span>
+                                            <button><a href="">MUA NGAY</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="btn-slider">
+                                    <div id="left1" class="left-slider">
+                                    <i class='bx bx-chevron-left'></i>
+                                    </div>
+                                    <div id="right1" class="right-slider">
+                                    <i class='bx bx-chevron-right'></i>
+                                    </div>
+                                </div> 
+                            </div>
+                            
+            
+                            <div class="title-models">
+                                <div class="content-title">
+                                    <div class="title-md">
+                                        <img src="https://ihawa.com.vn/uploads/chinhsach/2030477574_2.png" alt="">
+                                        <strong>Phục vụ 24/7</strong>
+                                    </div>
+                                    <div class="title-md">
+                                        <img src="https://ihawa.com.vn/uploads/chinhsach/68092358_1.png" alt="">                 
+                                        <strong>Giao hàng tận nơi</strong>
+                                    </div>
+                                    <div class="title-md">
+                                        <img src="https://ihawa.com.vn/uploads/chinhsach/2030477574_2.png" alt="">
+                                        <strong>Miễn phí vận chuyển</strong>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- DANH MỤC SẢN PHẨM -->
+                            <div class="title-danhmuc">
+                                <h2>DANH MỤC SẢN PHẨM</h2>
+                            </div>
+                            <div class="slider-models-contai">
+                                <div id="models-slid" class="slider-models">
+                                    <!-- <div class="img-model">
+                                        <a href="">
+                                            <img src="https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010187AA/importer/standup.png.transform.approductmain.png" alt="">
+                                        </a>
+                                        <div class="name-model">
+                                            <a href="">
+                                                <h3>Product name</h3>
+                                            </a>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="btn-models">
+                                        <div id="left-model" class="left-models btn-mod">
+                                            <i class='bx bx-chevron-left'></i>
+                                        </div>
+                                        <div id="right-model" class="right-models btn-mod">
+                                            <i class='bx bx-chevron-right'></i>
+                                        </div>
+                                </div>
+                            </div>
+            
+                            <div class="img-title">
+                                <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/gps_mainbanner1.jpg" alt="">
+                            </div>
+            
+                            <!-- SẢN PHẨM GIẢM GIÁ -->
+                            <div class="title-danhmuc">
+                                <h2>SẢN PHẨM MỚI NHẤT</h2>
+                            </div>
+                            <div class="slider-models-contai">
+                                <div id="models-sale" class="slider-models">                  
+                                </div>
+                                <div class="btn-models">
+                                        <div id="left-sale" class="left-models btn-mod">
+                                            <i class='bx bx-chevron-left'></i>
+                                        </div>
+                                        <div id="right-sale" class="right-models btn-mod">
+                                            <i class='bx bx-chevron-right'></i>
+                                        </div>
+                                </div>
+                            </div>
+            
+                            <div style="margin: 0 auto; margin-top: 80px" class="img-title">
+                                <img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container/image_716323714_copy_546278471.casiocoreimg.jpeg/1708933102568/kv.jpeg" alt="">
+                            </div>
+                            <div style="margin: 0 auto;" class="img-title">
+                                <img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container/image_1170766954_cop.casiocoreimg.jpeg/1708933102629/pc-w1920h816-logo.jpeg" alt="">
+                            </div>
+            
+                            <!-- TIN TỨC VÀ MẪU MỚI RA-->
+                            <div class="title-danhmuc">
+                                <h2>TIN TỨC VÀ MẪU MỚI RA MẮT</h2>
+                            </div>
+                            <div class="slider-models-contai">
+                                <div id="models-selling" class="slider-models">             
+                                    <div class="selling-model">
+                                        <div class="model-sl">
+                                            <div class="img-sell">
+                                            <a href=""><img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container_1790102794/content_panel_list/content_panel_202104_1608992912/image.casiocoreimg.jpeg/1708933104104/og-w800h800-notext.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="name-model-sell">
+                                                <a href=""><h5>MULTICOLOR ACCENTS</h5></a>
+                                                <span>Monochromatic color schemes with a playful touch: Multicolor designs with a pop flair</span>                              </div>
+                                        </div>
+                                    </div>                      
+                                    <div class="selling-model">
+                                        <div class="model-sl">
+                                            <div class="img-sell">
+                                                <a href=""><img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container_1790102794/content_panel_list/content_panel_202107_1741450022/image.casiocoreimg.jpeg/1708933103431/4-2.collabo-web-mo-800x800%28px%29.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="name-model-sell">
+                                                <a href=""><h5>ITZY x G-SHOCK</h5></a>
+                                                <span>Collaboration watches featuring K-POP Girl Group ITZY</span>
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                    <div class="selling-model">
+                                        <div class="model-sl">
+                                            <div class="img-sell">
+                                                <a href=""><img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container_1790102794/content_panel_list/content_panel_202104_636517217/image.casiocoreimg.jpeg/1708933103462/og-w800h800-notext.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="name-model-sell">
+                                                <a href=""><h5>GST - B600</h5></a>
+                                                <span>Smallest G-STEEL yet</span>
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                    <div class="selling-model">
+                                        <div class="model-sl">
+                                            <div class="img-sell">
+                                                <a href=""><img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container_1790102794/content_panel_list/content_panel_202309_1184308030/image.casiocoreimg.jpeg/1708933103493/og-w800h800-notext.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="name-model-sell">
+                                                <a href=""><h5>G-Shock HIDDEN GLOW</h5></a>
+                                                <span>Phosphorescent faces for designs that shine</span>
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                    <div class="selling-model">
+                                        <div class="model-sl">
+                                            <div class="img-sell">
+                                                <a href=""><img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container_1790102794/content_panel_list/content_panel_202309_746782933/image.casiocoreimg.jpeg/1708933103523/og-w800h800-notext.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="name-model-sell">
+                                                <a href=""><h5>TEAM LAND CRUISER TOYOTA AUTO BODY</h5></a>
+                                                <span>Team Land Cruiser collaboration model: Partnering with a veteran Dakar Rally challenger</span>
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                    <div class="selling-model">
+                                        <div class="model-sl">
+                                            <div class="img-sell">
+                                                <a href=""><img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container_1790102794/content_panel_list/content_panel_202302_161576374/image.casiocoreimg.jpeg/1708933103554/thumb-b1000.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="name-model-sell">
+                                                <a href=""><h5>G-SHOCK MAGAZINE</h5></a>
+                                                <span>HODINKEE | GWC - B1000</span>
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                    <div class="selling-model">
+                                        <div class="model-sl">
+                                            <div class="img-sell">
+                                                <a href=""><img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container_1790102794/content_panel_list/content_panel_202401/image.casiocoreimg.jpeg/1708933103584/thumb-pl.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="name-model-sell">
+                                                <a href=""><h5>G-SHOCK MAGAZINE</h5></a>
+                                                <span>HYPEBEAST | POLYCHROMATIC ACCENTS</span>
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                    <div class="selling-model">
+                                        <div class="model-sl">
+                                            <div class="img-sell">
+                                                <a href=""><img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container_1790102794/content_panel_list/content_panel_202105_1373303742/image.casiocoreimg.jpeg/1708933103632/og-w800h800-notext.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="name-model-sell">
+                                                <a href=""><h5>TONE-ON-TONE SERIES</h5></a>
+                                                <span>Bold, yet delicate : Monochromatic color for a touch of flair</span>
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                    <div class="selling-model">
+                                        <div class="model-sl">
+                                            <div class="img-sell">
+                                                <a href=""><img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container_1790102794/content_panel_list/content_panel_202204_1792891031/image.casiocoreimg.jpeg/1708933103669/og-w800h800-notext.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="name-model-sell">
+                                                <a href=""><h5>GMD - S5600CT</h5></a>
+                                                <span>Nature-minded cloth-band watches in comfortable colors and materials</span>
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                    <div class="selling-model">
+                                        <div class="model-sl">
+                                            <div class="img-sell">
+                                                <a href=""><img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container_1790102794/content_panel_list/content_panel_202312/image.casiocoreimg.jpeg/1708933103699/og-w800h800-notext.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="name-model-sell">
+                                                <a href=""><h5>RANGEMAN GPR-H1000</h5></a>
+                                                <span>6 sensors + GPS functionality to track movement in real time</span>
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                    <div class="selling-model">
+                                        <div class="model-sl">
+                                            <div class="img-sell">
+                                                <a href=""><img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container_1790102794/content_panel_list/content_panel_copy_c/image.casiocoreimg.jpeg/1708933104009/gm-s1100bp-5a-11.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="name-model-sell">
+                                                <a href=""><h5>BEAUTIFULL PEOPLE x G-SHOCK</h5></a>
+                                                <span>Collaboration</span>
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                    <div class="selling-model">
+                                        <div class="model-sl">
+                                            <div class="img-sell">
+                                                <a href=""><img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container_1790102794/content_panel_list/content_panel_202107_1591627180/image.casiocoreimg.jpeg/1708933104039/og-w800h800-notext.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="name-model-sell">
+                                                <a href=""><h5>CHARLES DARWIN FOUNDATION PARTNERSHIP MODEL</h5></a>
+                                                <span>Colllaboration</span>
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                    <div class="selling-model">
+                                        <div class="model-sl">
+                                            <div class="img-sell">
+                                                <a href=""><img src="https://gshock.casio.com/content/casio/locales/intl/en/brands/gshock/_jcr_content/root/responsivegrid/container_1790102794/content_panel_list/content_panel_202201_1943968438/image.casiocoreimg.jpeg/1708933104072/og-w800h800-notext.jpeg" alt=""></a>
+                                            </div>
+                                            <div class="name-model-sell">
+                                                <a href=""><h5>NATURE'S COLOUR</h5></a>
+                                                <span>Natural colours and botanical designs harmoniously complement stress-free lifestyles</span>
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                </div>
+                                <div style="color: #FF0000;" class="btn-models">
+                                        <div id="left-selling" class="left-models btn-mod">
+                                            <i class='bx bx-chevron-left'></i>
+                                        </div>
+                                        <div id="right-selling" class="right-models btn-mod">
+                                            <i class='bx bx-chevron-right'></i>
+                                        </div>
+                                </div>
+                            </div>
+                        </article>
+        </main>
+
+        <footer>
+            <div class="footer">
+                          
+                           
+                                <div class="footer-item">
+            
+                                <div class="footer-image">
+                                    <div class="footer-logo">
+                                        <img src="http://donghotuandt.vnn.mn/userfiles/img/604453/logomwatch02.png" alt="">
+                                    </div>
+            
+                                    <div class="footer-image-item">
+                                    <i class='bx bx-street-view'></i>
+                                    <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                                    </div>
+            
+                                    <div class="footer-image-item">
+                                    <i class='bx bx-phone-call'></i>
+                                    <p>076 922 0162</p>
+                                    </div>
+            
+                                    <div class="footer-image-item">
+                                    <i class='bx bx-envelope' ></i>
+                                    <p>demonhunterg@gmail.com 
+                                  </p>
+                                    </div>
+            
+                                    <div class="footer-image-item">
+                                    <i class='bx bxs-hand'></i>
+                                    <p>
+                                    mon@mona.media
+                                    </div>
+            
+            
+                                </div>
+            
+                                <div class="footer-content">
+                                    <h2>MENU</h2>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Trang chủ</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>GiớI thiệu</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Tin tức</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Liên hệ</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Kiểm tra đơn hàng</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Đăng ký Affilicate</p>
+                                    </div>
+                                </div>
+            
+            
+                                <div class="footer-content">
+                                    <h2>SẢN PHẨM</h2>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Baby-G</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Edifice</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>G-Shock</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>G-Steel</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Gravity Master</p>
+                                    </div>
+            
+                                    <div class="footer-content-item">
+                                    <i class='bx bxs-right-arrow'></i>
+                                    <p>Mudmaster</p>
+                                    </div>
+                                </div>
+            
+            
+                                <div class="footer-form">
+                                    <h2>ĐĂNG KÝ</h2>
+                                    <span>Đăng ký để nhận được được thông tin mới nhất từ chúng tôi.</span>
+            
+                           
+                               
+            
+                                <div class="footer-form-ip">
+            
+                                <div class="input-fieldd">
+                                <i class='bx bx-send'></i>
+                            <input type="text" placeholder="Email">
+                           </div>
+                                </div>
+                                <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
+            
+                                <div class="footer-form-icon">
+                                <i class='bx bxl-facebook-circle'></i>
+                                <i class='bx bxl-instagram-alt'></i>
+                                <i class='bx bxs-envelope' ></i>
+                                <i class='bx bxl-twitter' ></i>
+                                </div>
+            
+                                </div>
+            
+                                </div>
+            
+            
+            
+            
+                                
+                            
+            
+            
+            
+            
+            
+            
+                            <div class="support">
+                                <div class="contain-content">
+                                    <div class="content-support">
+                                        <div id="list-slider-sp" class="list-icon-support">
+                                            <div class="item-icon"><i class='bx bxs-phone-call'></i></div>
+                                            <div class="item-icon"><i class='bx bxl-messenger'></i></div>
+                                            <div class="item-icon"><span>Zalo</span></div>
+                                            <div class="item-icon"><i class='bx bx-envelope'></i></div>
+                                        </div>
+            
+                                        <div class="close-support none-open"><i class='bx bx-x'></i></div>
+                                    </div>
+            
+                                </div>
+                                
+                            </div>
+                            <div class="open-support none-open">
+                                    <div class="list-open-sp">
+                                        <ul>
+                                            <li>
+                                                <div style="background-color:#567AFF" class="icon-open mess">
+                                                    <i class='bx bxl-messenger'></i>
+                                                </div> 
+                                                <span class="chat-sp">Messenger</span>
+                                            </li>
+                                            <li>
+                                                <div style="background-color:#1EBEA5" class="icon-open zalo">
+                                                    <span>Zalo</span>
+                                                </div> 
+                                                <span style="padding-top: 3px;" class="chat-sp">Zalo chat</span>
+                                            </li>
+                                            <li>
+                                                <div style="background-color:#FF643A" class="icon-open email">
+                                                    <i class='bx bx-envelope'></i>
+                                                </div> 
+                                                <span class="chat-sp">Email</span>
+                                            </li>
+                                            <li>
+                                                <div style="background-color:#4EB625" class="icon-open phone">
+                                                    <i class='bx bxs-phone-call'></i>
+                                                </div> 
+                                                <span class="chat-sp">Gọi 0362931719</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="down-sp">
+                                    <i class='bx bx-caret-left' ></i>
+                                    </div>
+                            </div>
+                            </div>
+            </footer>
+                <div class="content-">
+               <p> © Bản quyền thuộc về Doãn Thanh Tuấn - Phone: 036.293.1719 - Email: watchshop@gmail.com</p>
+                </div>
+            
+</body>
+<script src="./public/scripts/app.js"></script>
+<script src="./public/scripts/home.js"></script>
+<script src="./public/scripts/main.js"></script>
+
+<script>
+    let userid = checkStatusLogin();
+        displaycheckTotalCart(userid);
+        startProducts();
+        startProductsIndex1();
+    // window.onload = function() {
+   
+    // }
+
+</script>
+</html>
