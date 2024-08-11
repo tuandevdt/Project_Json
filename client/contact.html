@@ -57,9 +57,9 @@
                                     </div>
                                     <div class="search-header">
                                         <div class="search">
-                                            <form action="index.php?route=search-product" method="POST">
+                                            <form action="" method="POST">
                                                 <input type="text" name="product-insearch" placeholder="Tìm kiếm">
-                                                <button type="submit" name="search-product"><i class='bx bx-search'></i></button>
+                                                <button id="search-product" type="submit" name="search-product"><i class='bx bx-search'></i></button>
                                             </form>
                                         </div>
                                     </div>
@@ -529,15 +529,15 @@
                 <div class="content-">
                <p> © Bản quyền thuộc về Doãn Thanh Tuấn - Phone: 036.293.1719 - Email: watchshop@gmail.com</p>
                 </div>
-            
+    </div>  
 </body>
 <script src="./public/scripts/main.js"></script>
 <script src="./public/scripts/app.js"></script>
 <script>
-    window.onload = function() {
-        let userid = checkStatusLogin();
 
-        displaycheckTotalCart(userid);
-    }
+    let userid = checkStatusLogin();
+
+    displaycheckTotalCart(userid);
+    startSearchProduct()
 </script>
 </html>

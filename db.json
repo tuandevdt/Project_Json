@@ -20,10 +20,10 @@
     },
     {
       "id": "3",
-      "name": "Van Tien",
+      "name": "VanTien",
       "email": "vantien@gmail.com",
       "password": "tuandoan123",
-      "status": "active",
+      "status": "Passive",
       "role": "user",
       "date": "2024-07-16"
     },
@@ -102,7 +102,7 @@
       "name": "ROYAL OAK CONCEPT GMT Large Date",
       "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009585.00/importer/standup.png.transform.approductmain.png",
       "price": 35000000,
-      "view": 1,
+      "view": 2,
       "description": "Combining futuristic looks, ergonomics, high technology and performance, the Royal Oak Concept collection explores new technical horizons with this new titanium model. The intricate split-seconds mechanism has been integrated into the thickness of the oscillating weight, making it visible on the caseback side – a first in the history of selfwinding watches. The watch offers two other practical functions: a GMT day/night indicator and a large date. ",
       "categoryid": 1,
       "date": "13:07:25 3/8/2024"
@@ -422,7 +422,7 @@
       "name": "ROYAL OAK OFFSHORE Openworked",
       "image": "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010846AA/importer/watch.png.transform.appdpmaintabwide.png",
       "price": 49850000,
-      "view": 0,
+      "view": 1,
       "description": "The 18-carat yellow Frosted gold case and bracelet powerfully contrast with the slate grey openworked movement. The rainbow bezel set with multicoloured gemstones adds a play of light. Hammered 18-carat yellow gold case, bezel set with “rainbow” baguette-cut multicoloured gemstones, glareproofed sapphire crystal and caseback, screw-locked crown.",
       "categoryid": 3,
       "date": "14:21:41 3/8/2024"

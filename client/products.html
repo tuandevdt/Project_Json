@@ -59,9 +59,9 @@
                         </div>
                         <div class="search-header">
                             <div class="search">
-                                <form action="index.php?route=search-product" method="POST">
+                                <form action="" method="POST">
                                     <input type="text" name="product-insearch" placeholder="Tìm kiếm">
-                                    <button type="submit" name="search-product"><i class='bx bx-search'></i></button>
+                                    <button id="search-product" type="submit" name="search-product"><i class='bx bx-search'></i></button>
                                 </form>
                             </div>
                         </div>
@@ -735,7 +735,16 @@
     <script src="./public/scripts/app.js"></script>
     <script>
         startCategories();
-        startProductId1();
+        startSearchProduct()
+        const currentUrl = new URL(window.location.href);
+        // Kiểm tra xem có tham số 'search' trong URL hay không
+        if (currentUrl.searchParams.has('search')) {
+            // Lấy giá trị của tham số 'search'
+            const searchTerm = currentUrl.searchParams.get('search');
+            searchProduct(searchTerm);
+        } else {
+            startProductId1();
+        }
         startProductId2();
         startProductId3();
         let userid = checkStatusLogin();

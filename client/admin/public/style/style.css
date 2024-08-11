@@ -222,6 +222,11 @@ article nav .login-admin #login-logout {
 .form-update-product table {
     color: white !important;
 }
+.form-update-product .order-infor {
+    color: white;
+    text-align: left;
+    padding: 10px 0px;
+}
 .form-update-product .img-order img {
     height: 70px;
 }

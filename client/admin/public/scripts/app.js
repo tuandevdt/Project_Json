@@ -145,7 +145,7 @@ function renderUsers(users) {
                 <td>${user.role}</td>
                 <td>${user.status}</td>
                 <td>${user.date}</td>
-                <td><button class="btn-update" value="">Update Status</button></td>
+                <td><button onclick="updateStatusUser('${user.id}')" class="btn-update" value="">Update Status</button></td>
             </tr>
         `;
     });
@@ -153,6 +153,32 @@ function renderUsers(users) {
   } else {
     console.error("list-users element not found");
   }
+}
+function handleUpdateStatusUser(id) {
+  let btnUpdate = document.getElementById('btn-update-status');
+  btnUpdate.addEventListener('click', (e) => {
+    e.preventDefault();
+    let statusNew = document.querySelector('#status-new').value;
+    console.log(statusNew);
+    if(statusNew == 1) {
+      let status = "active"
+      startUpdateStatusUser(id, status);
+    } else if(statusNew == 0) {
+      let status = "Passive"
+      startUpdateStatusUser(id, status);
+    }
+  });
+}
+
+function startUpdateStatusUser(id, newStatus) {
+  fetch(`${userAPI}/${id}`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ status: newStatus })
+  })
+  .then(response => response.json())
 }
 
 //CATEGORIES
@@ -651,6 +677,9 @@ function getNameOrder(id) {
     .then(function(data) {
       console.log(data);
       document.querySelector('.name-order').innerText = data.id
+      document.querySelector('#fullname').innerText = data.fullname
+      document.querySelector('#phone-number').innerText = data.phone
+      document.querySelector('#address').innerText = data.address
     })
 }
 

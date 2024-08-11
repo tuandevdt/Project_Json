@@ -20,6 +20,76 @@ function checkTotalCart(userid) {
     });
 }
 
+//SEARCH PRODUCTS IN HEADER
+function startSearchProduct() {
+  let btnSearch = document.querySelector('#search-product');
+  btnSearch.addEventListener('click', (e) => {
+    e.preventDefault();
+    let text = document.querySelector('input[name="product-insearch"]').value;
+    console.log(text);
+    // Tạo một đối tượng URL mới
+    let url = new URL("client/products.html", window.location.origin);
+    // Thêm tham số 'search' vào URL
+    url.searchParams.set('search', text);
+    // Chuyển hướng đến URL mới
+    window.location.href = url.toString();
+  });
+}
+function searchProduct(text) {
+    // Gọi API để lấy danh sách sản phẩm tương ứng với text tìm kiếm
+    fetchProductsByName(text)
+      .then(products => {
+        // Hiển thị danh sách sản phẩm tìm thấy
+        console.log('list',products);
+        
+        displayProducts(products);
+      })
+      .catch(error => {
+        console.error('Lỗi khi tìm kiếm sản phẩm:', error);
+      });
+
+}
+function fetchProductsByName(name) {
+  let API = `${productAPI}`;
+  console.log(API);
+
+  return fetch(API)
+    .then(response => response.json())
+    .then(data => {
+      // Chuyển đổi tên sản phẩm và chuỗi tìm kiếm về cùng một dạng
+      const searchTerm = name.toLowerCase();
+      return data.filter(product => product.name.toLowerCase().includes(searchTerm));
+    });
+}
+function displayProducts(products) {
+  let listproducts = document.getElementById("products-a");
+    let htmls = products.map(function (product) {
+      return `
+            <div class="pro-item">
+                <div class="model-sl">
+                    <div class="img-sell">
+                        <a href="detail.html?data-id=${product.id}">
+                            <img src="${product.image}" alt="">
+                        </a>
+                    </div>
+                    <div class="name-product-item">
+                        <a href="detail.html?data-id=${product.id}">
+                            <h5>
+                                ${product.price.toLocaleString("en-US", {
+                                  style: "decimal",
+                                  minimumFractionDigits: 0,
+                                  maximumFractionDigits: 0,
+                                })} VND
+                            </h5>
+                        </a>
+                        <span>${product.name}</span>
+                    </div>
+                </div>
+            </div>
+      `;
+    });
+    listproducts.innerHTML = htmls.join("");
+}
 //PRODUCTS
 function startProducts() {
   getProductByID(renderProducts, 2);

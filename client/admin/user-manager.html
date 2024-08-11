@@ -89,17 +89,17 @@
                             
                         </tbody>
                         <div class="form-edit none-active">
-                            <form action="index.php?route=update-status-users" method="POST">
+                            <form action="" method="POST">
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Chọn trạng thái người dùng</label>
-                                    <select name="status" id="">
+                                    <select name="status" id="status-new">
                                         <option value="1">1 (Hoạt động)</option>
                                         <option value="0">0 (Ngừng hoạt động)</option>
                                     </select>
                                 </div>
 
                                 <input id="id-update" type="hidden" name="id" value="">
-                                <button type="submit" name="btn-update-status" class="btn btn-primary">Send</button>
+                                <button id="btn-update-status" type="submit" name="btn-update-status" class="btn btn-primary">Send</button>
                             </form>
                             <div class="btn-close">
                                 <i class='bx bx-x'></i>
@@ -121,4 +121,9 @@
     startUsers();
     checkStatusLogin();
     user_manager();
+    function updateStatusUser(id) {
+        document.querySelector('.form-edit').classList.remove('none-active')
+        document.querySelector('#id-update').value = id;
+        handleUpdateStatusUser(id)
+    }
 </script>
