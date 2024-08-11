@@ -7,7 +7,7 @@
       "password": "Tuandoan@2404",
       "status": "active",
       "role": "admin",
-      "date": "2024-07-05"
+      "date": "12:00:00 15/7/2024"
     },
     {
       "id": "2",
@@ -16,7 +16,7 @@
       "password": "tuandoan123",
       "status": "active",
       "role": "user",
-      "date": "2024-07-14"
+      "date": "15:40:31 26/7/2024"
     },
     {
       "id": "3",
@@ -25,7 +25,7 @@
       "password": "tuandoan123",
       "status": "Passive",
       "role": "user",
-      "date": "2024-07-16"
+      "date": "14:34:21 24/7/2024"
     },
     {
       "id": "4",
